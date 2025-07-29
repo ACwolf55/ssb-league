@@ -1,43 +1,48 @@
 import Image from "next/image";
-import BracketBox from "@/components/BracketBox";
+import BattleBox from "@/components/BracketBox";
 
 export default function Home() {
   return (
-    <div >
-       {/* Gebu jul 2025 bracket */}
+    <div className="font-sans flex flex-col items-center min-h-screen p-8 pb-20 gap-16 
+  sm:p-20 bg-gray-600">
+<header className="h-[15vh] w-full flex items-center justify-center bg-white text-blue-600 text-5xl font-extrabold">
+  SSB LEAGUE
+</header>
 
-     <main className="p-4 flex flex-col items-center space-y-8">
-  {/* Winner */}
-  <div className="w-40 h-20 bg-green-300 rounded flex items-center justify-center">
-    Winner
-  </div>
 
-  {/* Finals - 2 boxes side by side */}
-  <div className="flex justify-around w-full space-x-4">
-    <div className="w-40 h-20 bg-blue-300 rounded flex items-center justify-center">
-      Finalist 1
-    </div>
-    <div className="w-40 h-20 bg-blue-300 rounded flex items-center justify-center">
-      Finalist 2
-    </div>
-  </div>
 
-  {/* Semifinals - 4 boxes side by side */}
-  <div className="flex justify-around w-full max-w-4xl space-x-4">
-    <div className="w-40 h-20 bg-purple-300 rounded flex items-center justify-center">
-      Semi 1
+    
+  <main className="flex flex-col items-center space-y-12 mt-12">
+    {/* Winner BracketBox */}
+    <BattleBox name={"Gebu"}/>
+  
+    {/* Finals: 1 Matchup = 1 BracketBox with 2 players */}
+    <div className="flex justify-center w-full max-w-2xl gap-x-8">
+      <BattleBox name={"Gebu"}/>
+      <BattleBox name={"AC Just A Thang Baby"}/>
     </div>
-    <div className="w-40 h-20 bg-purple-300 rounded flex items-center justify-center">
-      Semi 2
+
+    {/* Semifinals: 2 Matchups = 2 BracketBoxes with 2 players each */}
+    <div className="flex justify-center w-full max-w-5xl gap-x-16">
+      <BattleBox name={"Gebu"}/>
+      <BattleBox name={"Lamp"}/>
+      <BattleBox name={"AC Just A Thang Baby"}/>
+      <BattleBox name={"UNK"}/>
+      
     </div>
-    <div className="w-40 h-20 bg-purple-300 rounded flex items-center justify-center">
-      Semi 3
+
+     <div className="flex justify-center w-full max-w-5xl gap-x-16">
+      <BattleBox name={"Gebu"}/>
+      <BattleBox name={"AC Just A Thang Baby"}/>
+
+      <BattleBox name={"FTF"}/>
+      <BattleBox name={"UNK"}/>
+      <BattleBox name={"Ty"}/>
+      <BattleBox name={"Lamp"}/>
+      
     </div>
-    <div className="w-40 h-20 bg-purple-300 rounded flex items-center justify-center">
-      Semi 4
-    </div>
-  </div>
-</main>
+  </main>
+
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
    
           <Image
