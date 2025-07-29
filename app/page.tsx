@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BattleBox from "@/components/BracketBox";
+import BattleBox from "@/components/BattleBox";
 
 export default function Home() {
   return (
@@ -25,19 +25,19 @@ export default function Home() {
     {/* Semifinals: 2 Matchups = 2 BracketBoxes with 2 players each */}
     <div className="flex justify-center w-full max-w-5xl gap-x-16">
       <BattleBox name={"Gebu"}/>
-      <BattleBox name={"Lamp"}/>
+      <BattleBox name={"Ty"}/>
       <BattleBox name={"AC Just A Thang Baby"}/>
       <BattleBox name={"UNK"}/>
       
     </div>
 
      <div className="flex justify-center w-full max-w-5xl gap-x-16">
-      <BattleBox name={"Gebu"}/>
+      <BattleBox name={"TY"}/>
       <BattleBox name={"AC Just A Thang Baby"}/>
 
       <BattleBox name={"FTF"}/>
       <BattleBox name={"UNK"}/>
-      <BattleBox name={"Ty"}/>
+      <BattleBox name={"Gebu"}/>
       <BattleBox name={"Lamp"}/>
       
     </div>
