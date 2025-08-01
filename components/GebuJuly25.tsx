@@ -1,25 +1,49 @@
- export default function Gebu({ name }: { name: string }) {
+import React from "react";
+import BattleBox from "./BattleBox";
+
+export default function GebuJuly2025() {
   return (
-    
-  );
-}
- 
- 
- 
- <div className="flex flex-col items-center gap-4 p-4">
-      <div className="bg-yellow-300 p-2 rounded shadow">🏆 Winner: TBD</div>
+    <div className="flex flex-col items-center space-y-12 mt-12 bg-gray-500">
+      <header className="bg-gray-200 text-blue-600 text-3xl font-extrabold">Gebu July 2025</header>
 
-      <div className="bg-blue-200 p-2 rounded shadow">Semifinal Winner 1</div>
-      <div className="bg-white p-2 rounded shadow">
-        Match 1: Player A vs Player B
+      <div className="text-center border-4 border-yellow-400 mb-2 p-4">
+        <h3 className="text-lg font-bold text-yellow-500 mb-2">Winner! 👑</h3>
+        <BattleBox name={"Gebu"} />
+      </div>
+      {/* Finals: 1 Matchup = 1 BracketBox with 2 players */}
+      <div className="flex justify-center w-full max-w-2xl gap-x-8">
+        <div className="border-4 border-blue-500 p-4 rounded-xl flex gap-x-4">
+          <BattleBox name={"Gebu"} />
+          <BattleBox name={"AC Just A Thang Baby"} />
+        </div>
       </div>
 
-      <div className="bg-blue-200 p-2 rounded shadow">Semifinal Winner 2</div>
-      <div className="bg-white p-2 rounded shadow">
-        Match 2: Player C vs Player D
+      {/* Semifinals: 2 Matchups = 2 BracketBoxes with 2 players each */}
+      <div className="flex justify-center w-full max-w-5xl gap-x-16">
+        <div className="border-4 border-blue-500 p-4 rounded-xl flex gap-x-4">
+          <BattleBox name={"Gebu"} />
+          <BattleBox name={"Ty"} />
+        </div>
+        <div className="border-4 border-blue-500 p-4 rounded-xl flex gap-x-4">
+          <BattleBox name={"AC Just A Thang Baby"} />
+          <BattleBox name={"UNK"} />
+        </div>
       </div>
 
-      <div className="bg-white p-2 rounded shadow">
-        Player E vs Player F (auto advance?)
+      <div className="flex justify-center w-full max-w-5xl gap-x-16">
+        <div className="border-4 border-blue-500 p-4 rounded-xl flex gap-x-4">
+          <BattleBox name={"TY"} />
+          <BattleBox name={"AC Just A Thang Baby"} />
+        </div>
+        <div className="border-4 border-blue-500 p-4 rounded-xl flex gap-x-4">
+          <BattleBox name={"FTF"} />
+          <BattleBox name={"UNK"} />
+        </div>
+        <div className="border-4 border-blue-500 p-4 rounded-xl flex gap-x-4">
+          <BattleBox name={"Gebu"} />
+          <BattleBox name={"Lamp"} />
+        </div>
       </div>
     </div>
+  );
+}
