@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BattleBox from "@/components/BattleBox";
 import GebuJuly2025 from "@/components/GebuJuly25";
+import TierList from "@/components/TierList";
 
 
 export default function Home() {
@@ -16,7 +17,8 @@ export default function Home() {
       <main>
       
       <GebuJuly2025 />
-
+      
+      <TierList/>
 
       </main>
 
