@@ -1,6 +1,7 @@
 // components/GebuJuly25.tsx (or your existing file, replace contents)
 import React from "react";
 import BattleBox from "./BattleBox";
+import Link from "next/link";
 
 export default function GebuJuly2025() {
   return (
@@ -13,27 +14,41 @@ export default function GebuJuly2025() {
       <div className="w-full flex justify-center">
         <div className="border-2 flex flex-col items-center border-yellow-400 p-2 text-center bg-gray-700 rounded-xl w-full max-w-[220px]">
           <h3 className="text-yellow-300 font-bold mb-2 text-sm">Winner 👑</h3>
+          <Link href="/user/Gebu">
           <BattleBox name="Gebu" sprite="/sprites/bowser.png" />
+          </Link>
         </div>
       </div>
 
       {/* Finals */}
       <div className="w-full flex justify-center gap-2 sm:gap-6">
         <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
+          <Link href="/user/Gebu">
           <BattleBox name="Gebu" sprite="/sprites/bowser.png"  />
+          </Link>
+          <Link href="/user/ACJATB">
           <BattleBox name="AC Just A Thang Baby" sprite="/sprites/zelda.png"/>
+          </Link>
         </div>
       </div>
 
       {/* Semifinals */}
       <div className="w-full flex justify-center gap-2 sm:gap-6">
         <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
+          <Link href="/user/Gebu">
           <BattleBox name="Gebu" sprite="/sprites/bowser.png"/>
+          </Link>
+          <Link href="/user/ty">
           <BattleBox name="Ty" sprite="/sprites/pokemon_trainer.png"/>
+          </Link>
         </div>
         <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
+          <Link href="/user/unk">
           <BattleBox name="UNK" sprite="/sprites/yoshi.png"/>
+          </Link>
+          <Link href="/user/ACJATB">
           <BattleBox name="AC Just A Thang Baby" sprite="/sprites/pikachu.png"/>
+          </Link>
         </div>
       </div>
 
@@ -41,17 +56,29 @@ export default function GebuJuly2025() {
       <div className="w-full flex justify-center gap-2 sm:gap-6 flex-wrap">
        
         <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
+          <Link href="/user/Gebu">
           <BattleBox name="Gebu" sprite="/sprites/bowser.png"/>
+          </Link>
+          <Link href="/user/Lamp">
           <BattleBox name="Lamp" sprite="/sprites/sora.png"/>
+          </Link>
         </div> 
         <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
+          <Link href="/user/ftf">
           <BattleBox name="FTF" sprite="/sprites/ganondorf.png"/>
+          </Link>
+          <Link href="/user/unk">
           <BattleBox name="UNK" sprite="/sprites/bowser.png" />
+          </Link>
         </div>
         <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
           *BYE*
+          <Link href="/user/ty">
           <BattleBox name="TY" sprite="/sprites/pokemon_trainer.png"/>
+          </Link>
+          <Link href="/user/acjatb">
           <BattleBox name="AC Just A Thang Baby" sprite="/sprites/zelda.png"/>
+          </Link>
         </div>
       </div>
     </div>
