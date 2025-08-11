@@ -39,7 +39,7 @@ export const players: Player[] = [
     name: "FTF",
     fullName: 'Frank "The Frank" Farinacci',
    icon: "/player-icons/FTF1.svg",
-    tierRank: "A",
+    tierRank: "B",
     mains: [
       "King K Rool",
       "Ganondorf",
@@ -98,7 +98,7 @@ export const players: Player[] = [
   {
     name: "UNK",
      icon: "/player-icons/default.png",
-    tierRank: "C",
+    tierRank: "A",
     mains: [
       "Bowser",
       "Yoshi",
