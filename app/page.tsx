@@ -11,7 +11,7 @@ export default function Home() {
   sm:p-20 bg-gray-600"
     >
       <header className="h-[15vh] w-full flex items-center justify-center bg-white text-blue-600 text-5xl font-extrabold">
-        SSB LEAGUE
+       <img src="/ssbu.png"></img> <h1 className="ml-4">SSB LEAGUE</h1>
       </header>
 
       <main>

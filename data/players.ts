@@ -97,7 +97,7 @@ export const players: Player[] = [
   },
   {
     name: "UNK",
-     icon: "/player-icons/default.jpg",
+     icon: "/player-icons/default.png",
     tierRank: "C",
     mains: [
       "Bowser",
@@ -188,7 +188,7 @@ export const players: Player[] = [
    {
     name: "Dan",
     fullName: "CheatCode",
-     icon: "/player-icons/default.jpg",
+     icon: "/player-icons/default.png",
     tierRank: "D",
     mains: [
       "Bowser",
