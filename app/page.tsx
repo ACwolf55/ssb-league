@@ -10,7 +10,7 @@ export default function Home() {
       className="font-sans flex flex-col items-center min-h-screen p-8 pb-20 gap-16 
   sm:p-20 bg-gray-600"
     >
-      <header className="h-[15vh] w-full p-4 flex items-center justify-center bg-gray-500 text-black text-5xl rounded-lg font-extrabold">
+      <header className="h-[15vh] w-full p-4 flex items-center justify-center bg-white text-black text-5xl rounded-lg font-extrabold">
        <img src="/ssbu.png"></img> <h1 className="ml-4">SSB LEAGUE</h1>
       </header>
 
