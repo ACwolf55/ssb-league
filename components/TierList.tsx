@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link";
 
 function TierList() {
   return (
@@ -6,39 +7,72 @@ function TierList() {
       <div className="flex flex-col space-y-4 max-w-3xl mx-auto mt-12 bg-gray-500 text-white font-bold">
       <header className="bg-gray-200 text-blue-600 text-center text-3xl font-extrabold">TierList</header>
   {/* S Tier */}
-  <div className="flex items-center space-x-4 bg-red-600 p-4 rounded-xl shadow-lg">
-    <span className="text-2xl w-12">S</span>
-    <div className="flex flex-wrap gap-4">
-      <div className="bg-white text-black px-4 py-2 rounded-lg">Gebu</div>
-    </div>
-  </div>
 
-  {/* A Tier */}
-  <div className="flex items-center space-x-4 bg-orange-500 p-4 rounded-xl shadow-lg">
-    <span className="text-2xl w-12">A</span>
-    <div className="flex flex-wrap gap-4">
-      <div className="bg-white text-black px-4 py-2 rounded-lg">AC Just A Thang Baby</div>
-      <div className="bg-white text-black px-4 py-2 rounded-lg">UNK</div>
-    </div>
+{/* S Tier */}
+<div className="flex items-center space-x-4 bg-red-600 p-4 rounded-xl shadow-lg">
+  <span className="text-2xl w-12">S</span>
+  <div className="flex flex-wrap gap-4">
+    <Link href="/user/Gebu">
+      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+        Gebu
+      </div>
+    </Link>
   </div>
+</div>
 
-  {/* B Tier */}
-  <div className="flex items-center space-x-4 bg-yellow-500 p-4 rounded-xl shadow-lg">
-    <span className="text-2xl w-12">B</span>
-    <div className="flex flex-wrap gap-4">
-      <div className="bg-white text-black px-4 py-2 rounded-lg">FTF</div>
-      <div className="bg-white text-black px-4 py-2 rounded-lg">Lamp</div>
-      <div className="bg-white text-black px-4 py-2 rounded-lg">Ty</div>
-    </div>
+{/* A Tier */}
+<div className="flex items-center space-x-4 bg-orange-500 p-4 rounded-xl shadow-lg">
+  <span className="text-2xl w-12">A</span>
+  <div className="flex flex-wrap gap-4">
+    <Link href="/user/ACJATB">
+      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+        AC JATB
+      </div>
+    </Link>
+    <Link href="/user/UNK">
+      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+        UNK
+      </div>
+    </Link>
   </div>
+</div>
+
+{/* B Tier */}
+<div className="flex items-center space-x-4 bg-yellow-500 p-4 rounded-xl shadow-lg">
+  <span className="text-2xl w-12">B</span>
+  <div className="flex flex-wrap gap-4">
+    <Link href="/user/FTF">
+      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+        FTF
+      </div>
+    </Link>
+    <Link href="/user/Lamp">
+      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+       The Lamp
+      </div>
+    </Link>
+    <Link href="/user/TY">
+      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+        Ty
+      </div>
+    </Link>
+  </div>
+</div>
+
 
   {/* C Tier */}
   <div className="flex items-center space-x-4 bg-green-500 p-4 rounded-xl shadow-lg">
     <span className="text-2xl w-12">C</span>
     <div className="flex flex-wrap gap-4">
+      <Link href="/user/kiks">
       <div className="bg-white text-black px-4 py-2 rounded-lg">Kiks</div>
+      </Link>
+      <Link href="/user/adrian">
       <div className="bg-white text-black px-4 py-2 rounded-lg">Adrian</div>
+      </Link>
+      <Link href="/user/dylan">
       <div className="bg-white text-black px-4 py-2 rounded-lg">Dylan</div>
+      </Link>
     </div>
   </div>
 
@@ -46,8 +80,12 @@ function TierList() {
   <div className="flex items-center space-x-4 bg-blue-500 p-4 rounded-xl shadow-lg">
     <span className="text-2xl w-12">D</span>
     <div className="flex flex-wrap gap-4">
+      <Link href="/user/mitch">
       <div className="bg-white text-black px-4 py-2 rounded-lg">Mitch</div>
+      </Link>
+      <Link href="/user/dan">
       <div className="bg-white text-black px-4 py-2 rounded-lg">Dan</div>
+      </Link>
     </div>
   </div>
 </div>

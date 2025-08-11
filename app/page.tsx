@@ -16,9 +16,9 @@ export default function Home() {
 
       <main>
       
+      <TierList/>
       <GebuJuly2025 />
       
-      <TierList/>
 
       </main>
 
