@@ -4,8 +4,8 @@ import BattleBox from "./BattleBox";
 
 export default function GebuJuly2025() {
   return (
-    <div className="flex flex-col items-center space-y-6 mt-8 bg-gray-500 w-full px-3">
-      <header className="bg-gray-200 text-blue-600 text-xl sm:text-3xl font-extrabold text-center w-full py-2 rounded">
+    <div className="flex flex-col items-center space-y-6 mt-8 bg-gray-500 w-full px-3 p-8">
+      <header className="bg-gray-200  text-black text-xl sm:text-3xl font-extrabold rounded-lg text-center w-full py-2 rounded">
         Gebu July 2025
       </header>
 

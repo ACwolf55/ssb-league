@@ -4,8 +4,8 @@ import Link from "next/link";
 function TierList() {
   return (
     <div>
-      <div className="flex flex-col space-y-4 max-w-3xl mx-auto mt-12 bg-gray-500 text-white font-bold">
-      <header className="bg-gray-200 text-blue-600 text-center text-3xl font-extrabold">TierList</header>
+      <div className="p-10 flex flex-col space-y-4 max-w-3xl mx-auto mt-12 bg-gray-500 text-white font-bold">
+      <header className="bg-gray-200 text-black text-center text-3xl font-extrabold rounded-lg mt-4">TierList</header>
   {/* S Tier */}
 
 {/* S Tier */}
