@@ -11,7 +11,7 @@ export default function GebuJuly2025() {
 
       {/* Winner */}
       <div className="w-full flex justify-center">
-        <div className="border-2 border-yellow-400 p-2 text-center bg-gray-700 rounded-xl w-full max-w-[220px]">
+        <div className="border-2 flex flex-col items-center border-yellow-400 p-2 text-center bg-gray-700 rounded-xl w-full max-w-[220px]">
           <h3 className="text-yellow-300 font-bold mb-2 text-sm">Winner 👑</h3>
           <BattleBox name="Gebu" sprite="/sprites/bowser.png" />
         </div>
