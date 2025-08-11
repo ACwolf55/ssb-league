@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FAX AWN GAWD THUG GIT BREAD LEAGUE",
+  title: "FAX AWN GAWD THUG LYF LEAGUE",
   description: "WNY SSB League",
     icons: {
     icon: '/ssbu.png',
