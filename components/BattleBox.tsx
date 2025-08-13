@@ -7,27 +7,25 @@ export default function BattleBox({
   name: string;
   sprite: string;
 }) {
-
-console.log("Rendering BattleBox for:", name, "with sprite:", sprite);
-
   return (
     <div
       className={`
         bg-white text-black rounded-md
-        w-[18vw] sm:w-20 md:w-28 lg:w-32
-        min-w-[64px] max-w-[140px]
-        py-2 px-2
+        w-[16vw] sm:w-20 md:w-28 lg:w-32
+        min-w-[58px] max-w-[126px]
+        py-1.5 px-1.5
         shadow text-center
-        text-[10px] sm:text-xs md:text-sm
+        text-[9px] sm:text-xs md:text-sm
         border border-gray-300
         flex flex-col items-center justify-center
         whitespace-normal break-words
+        flex-shrink-0
       `}
     >
       <img
         src={sprite}
         alt={`${name} sprite`}
-        className="w-12 h-12 object-contain mb-1"
+        className="w-11 h-11 sm:w-12 sm:h-12 object-contain mb-1"
       />
       <span className="px-1">{name}</span>
     </div>

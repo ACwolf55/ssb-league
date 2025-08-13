@@ -22,7 +22,7 @@ export default function GebuJuly2025() {
 
       {/* Finals */}
       <div className="w-full flex justify-center gap-2 sm:gap-6">
-        <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
+        <div className="border-2 border-blue-500 bg-gray-700 p-4 rounded-xl flex items-center gap-2 sm:gap-4">
           <Link href="/user/Gebu">
           <BattleBox name="Gebu" sprite="/sprites/bowser.png"  />
           </Link>
@@ -52,35 +52,42 @@ export default function GebuJuly2025() {
         </div>
       </div>
 
-      {/* Round of 6 */}
-      <div className="w-full flex justify-center gap-2 sm:gap-6 flex-wrap">
-       
-        <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
-          <Link href="/user/Gebu">
-          <BattleBox name="Gebu" sprite="/sprites/bowser.png"/>
-          </Link>
-          <Link href="/user/Lamp">
-          <BattleBox name="Lamp" sprite="/sprites/sora.png"/>
-          </Link>
-        </div> 
-        <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
-          <Link href="/user/ftf">
-          <BattleBox name="FTF" sprite="/sprites/ganondorf.png"/>
-          </Link>
-          <Link href="/user/unk">
-          <BattleBox name="UNK" sprite="/sprites/bowser.png" />
-          </Link>
-        </div>
-        <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
-          *BYE*
-          <Link href="/user/ty">
-          <BattleBox name="TY" sprite="/sprites/pokemon_trainer.png"/>
-          </Link>
-          <Link href="/user/acjatb">
-          <BattleBox name="AC Just A Thang Baby" sprite="/sprites/zelda.png"/>
-          </Link>
-        </div>
-      </div>
+{/* Round of 6 */}
+<div className="w-full flex flex-col items-center gap-4 sm:gap-6">
+  {/* Top row: Lamp v Gebu & Unk v FTF side-by-side */}
+<div className="w-full flex justify-start gap-1 sm:gap-2 overflow-x-auto no-scrollbar px-2 sm:px-0">
+  <div className="border-2 border-blue-500 bg-gray-700 p-3 rounded-xl flex items-center gap-1 sm:gap-2 min-w-[140px]">
+    <Link href="/user/Gebu">
+      <BattleBox name="Gebu" sprite="/sprites/bowser.png" />
+    </Link>
+    <Link href="/user/Lamp">
+      <BattleBox name="Lamp" sprite="/sprites/sora.png" />
+    </Link>
+  </div>
+  <div className="border-2 border-blue-500 bg-gray-700  p-3 rounded-xl flex items-center gap-1 sm:gap-2 min-w-[140px]">
+    <Link href="/user/ftf">
+      <BattleBox name="FTF" sprite="/sprites/ganondorf.png" />
+    </Link>
+    <Link href="/user/unk">
+      <BattleBox name="UNK" sprite="/sprites/bowser.png" />
+    </Link>
+  </div>
+</div>
+
+
+  {/* BYE box below */}
+  <div className="w-full flex justify-center">
+    <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4 min-w-[180px] max-w-[420px]">
+      *BYE*
+      <Link href="/user/ty">
+        <BattleBox name="TY" sprite="/sprites/pokemon_trainer.png" />
+      </Link>
+      <Link href="/user/acjatb">
+        <BattleBox name="AC Just A Thang Baby" sprite="/sprites/zelda.png" />
+      </Link>
+    </div>
+  </div>
+</div>
     </div>
   );
 }
