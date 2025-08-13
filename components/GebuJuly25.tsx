@@ -66,7 +66,7 @@ export default function GebuJuly2025() {
   </div>
   <div className="border-2 border-blue-500 bg-gray-700  p-3 rounded-xl flex items-center gap-1 sm:gap-2 min-w-[140px]">
     <Link href="/user/ftf">
-      <BattleBox name="FTF" sprite="/sprites/ganondorf.png" />
+      <BattleBox name="FTF" sprite="/sprites/king_k_rool.png" />
     </Link>
     <Link href="/user/unk">
       <BattleBox name="UNK" sprite="/sprites/donkey_kong.png" />
