@@ -44,7 +44,7 @@ export default function GebuJuly2025() {
         </div>
         <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
           <Link href="/user/unk">
-          <BattleBox name="UNK" sprite="/sprites/yoshi.png"/>
+          <BattleBox name="UNK" sprite="/sprites/donkey_kong.png"/>
           </Link>
           <Link href="/user/ACJATB">
           <BattleBox name="AC Just A Thang Baby" sprite="/sprites/pikachu.png"/>
@@ -69,7 +69,7 @@ export default function GebuJuly2025() {
       <BattleBox name="FTF" sprite="/sprites/ganondorf.png" />
     </Link>
     <Link href="/user/unk">
-      <BattleBox name="UNK" sprite="/sprites/bowser.png" />
+      <BattleBox name="UNK" sprite="/sprites/donkey_kong.png" />
     </Link>
   </div>
 </div>
