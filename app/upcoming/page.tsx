@@ -30,6 +30,8 @@ const event = {
     "Top 2 seeds get a bye in the first round of the tournament",
     "once a character is used they cannot be used again",
     "in Best-of sets/ series matches, players may cannot switch characters between matches",
+    "Characters must be selected at same time",
+    "1 minute to decide character, before starting match",
     "Best of 3 for tournament matches",
     "Best of 5 for finals",
     "Going Shirtless - IS ALLOWED",
