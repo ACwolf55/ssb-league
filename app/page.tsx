@@ -46,7 +46,7 @@ export default function Home() {
             hover:bg-gray-500
           "
         >
-          See upcoming Salt Summer 2025
+          &#10024; See upcoming Salt &#129474; Summer 2025 &#10024;
         </Link>
 
         <TierList />
