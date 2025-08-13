@@ -33,8 +33,8 @@ const event = {
     "Best of 3 for tournament matches",
     "Best of 5 for finals",
     "Going Shirtless - IS ALLOWED",
+    "Winner's Trophy still pending...",
   ],
-  info: "Winner's Trophy still pending...",
 };
 
 export default function Upcoming() {
@@ -79,15 +79,10 @@ export default function Upcoming() {
           </ul>
         </div>
 
-        <div>
-          <h2 className="text-2xl font-semibold mb-2 text-center">Info</h2>
-          <p className="text-center max-w-xl mx-auto text-gray-300">
-            {event.info}
-          </p>
-        </div>
+
 
         {/* Participants and Odds */}
-        <div className="mb-6">
+        <div className="mb-6 mt-10">
           <h2 className="text-2xl font-semibold mb-4 text-center">
             Participants & Winning Odds
           </h2>
