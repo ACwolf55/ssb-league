@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import BattleBox from "@/components/BattleBox";
 import GebuJuly2025 from "@/components/GebuJuly25";
 import TierList from "@/components/TierList";
 import News from "@/components/News";
-import Upcoming from "./upcoming/page";
 
 import Link from "next/link";
 
@@ -13,32 +11,49 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div
-      className="font-sans flex flex-col items-center min-h-screen p-8 pb-20 gap-16 
-  sm:p-20 bg-gray-600"
+      className="
+        font-sans 
+        flex flex-col items-center min-h-screen 
+        px-4 sm:px-10 md:px-20 
+        pt-8 pb-20 gap-10 
+        bg-gray-600
+      "
     >
-      <header className="h-[15vh] w-full p-4 flex items-center justify-center bg-white text-black text-5xl rounded-lg font-extrabold">
-       <img src="/ssbu.png"></img> <h1 className="ml-4">SSB LEAGUE</h1>
+      <header
+        className="
+          h-[15vh] w-full p-4 
+          flex items-center justify-center 
+          bg-white text-black 
+          text-3xl sm:text-5xl 
+          rounded-lg font-extrabold
+          gap-4
+        "
+      >
+        <img src="/ssbu.png" alt="SSBU Logo" className="h-12 sm:h-16" />
+        <h1>SSB LEAGUE</h1>
       </header>
 
-      <main>
-      
-      <News />
-     
-     <Link
-  href="/upcoming"
-  className=" mt-10 block mx-auto max-w-3xl bg-white text-black text-center text-3xl font-extrabold rounded-2xl px-8 py-4 text-center hover:bg-gray-500"
->
-  See upcoming Salt Summer 2025
-</Link>
+      <main className="w-full max-w-4xl flex flex-col items-center gap-10">
+        <News />
 
-   
-      <TierList/>
-      <GebuJuly2025 />
-      
+        <Link
+          href="/upcoming"
+          className="
+            block w-full sm:max-w-xl
+            bg-white text-black text-center 
+            text-2xl sm:text-3xl font-extrabold 
+            rounded-2xl px-6 py-4 
+            hover:bg-gray-500
+          "
+        >
+          See upcoming Salt Summer 2025
+        </Link>
 
+        <TierList />
+        <GebuJuly2025 />
       </main>
 
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      <footer className="flex gap-6 flex-wrap items-center justify-center p-4">
         <Image
           aria-hidden
           src="/globe.svg"
