@@ -26,10 +26,16 @@ const event = {
   ],
   rules: [
     "3 stock",
-    "Cannot use the same character more than once in prelims",
-    "Losing player picks next stage/music",
+    "Battlefield or Omega stages only, set at random",
+    "Prelims: everybody plays everybody one match to set seeding for tournament",
+    "Top 2 seeds get a bye in the first round of the tournament",
+    "once a character is used they cannot be used again",
+    "in Best-of sets/ series matches, players may cannot switch characters between matches",
+    "Best of 3 for tournament matches",
+    " Best of 5 for finals",
+    "Going Shirtless - IS ALLOWED"
   ],
-  info: "This is the final match of the championship series. Please follow all tournament rules and respect players.",
+  info: "Winner's Trophy still pending...",
 };
 
 export default function Upcoming() {
