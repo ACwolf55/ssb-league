@@ -32,7 +32,7 @@ const event = {
     "once a character is used they cannot be used again",
     "in Best-of sets/ series matches, players may cannot switch characters between matches",
     "Best of 3 for tournament matches",
-    " Best of 5 for finals",
+    "Best of 5 for finals",
     "Going Shirtless - IS ALLOWED"
   ],
   info: "Winner's Trophy still pending...",
