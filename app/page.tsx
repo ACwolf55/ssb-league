@@ -1,7 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import BattleBox from "@/components/BattleBox";
 import GebuJuly2025 from "@/components/GebuJuly25";
 import TierList from "@/components/TierList";
+import News from "@/components/News";
+import Upcoming from "./upcoming/page";
+
+import Link from "next/link";
 
 
 export default function Home() {
@@ -16,6 +22,16 @@ export default function Home() {
 
       <main>
       
+      <News />
+     
+     <Link
+  href="/upcoming"
+  className=" mt-10 block mx-auto max-w-3xl bg-white text-black text-center text-3xl font-extrabold rounded-2xl px-8 py-4 text-center hover:bg-gray-500"
+>
+  See upcoming Salt Summer 2025
+</Link>
+
+   
       <TierList/>
       <GebuJuly2025 />
       
