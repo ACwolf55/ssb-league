@@ -22,7 +22,6 @@ const event = {
   maybeParticipating: [
     { name: "Ty", odds: "+250" },
     { name: "Adrian", odds: "+500" },
-    
   ],
   rules: [
     "3 stock",
@@ -33,7 +32,7 @@ const event = {
     "in Best-of sets/ series matches, players may cannot switch characters between matches",
     "Best of 3 for tournament matches",
     "Best of 5 for finals",
-    "Going Shirtless - IS ALLOWED"
+    "Going Shirtless - IS ALLOWED",
   ],
   info: "Winner's Trophy still pending...",
 };
@@ -68,6 +67,23 @@ export default function Upcoming() {
             </p>
             <p>{event.location}</p>
           </div>
+        </div>
+
+        {/* Rules */}
+        <div className="mt-10 mb-6">
+          <h2 className="text-2xl font-semibold mb-4 text-center">Rules</h2>
+          <ul className="list-disc list-inside space-y-2 max-w-xl mx-auto text-gray-300">
+            {event.rules.map((rule, idx) => (
+              <li key={idx}>{rule}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold mb-2 text-center">Info</h2>
+          <p className="text-center max-w-xl mx-auto text-gray-300">
+            {event.info}
+          </p>
         </div>
 
         {/* Participants and Odds */}
@@ -112,24 +128,6 @@ export default function Upcoming() {
               </li>
             ))}
           </ul>
-        </div>
-
-        {/* Rules */}
-        <div className="mt-10 mb-6">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Rules</h2>
-          <ul className="list-disc list-inside space-y-2 max-w-xl mx-auto text-gray-300">
-            {event.rules.map((rule, idx) => (
-              <li key={idx}>{rule}</li>
-            ))}
-          </ul>
-        </div>
-      
-
-        <div>
-          {/* <h2 className="text-2xl font-semibold mb-2 text-center">Info</h2>
-          <p className="text-center max-w-xl mx-auto text-gray-300">
-            {event.info}
-          </p> */}
         </div>
       </div>
     </div>
