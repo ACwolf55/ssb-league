@@ -1,10 +1,10 @@
 import React from 'react'
 
 function News() {
-  const text = " \u25BC Next Tournament \u25BC :   Salt Summer 2025 - August 30th! \u25BC  in Lockport \u25BC";
+  const text = " \u25BC Next Tournament \u25BC : Salt Summer 2025 - August 30th! \u25BC in Lockport \u25BC";
 
-   return (
-    <div className=" mx-auto w-full overflow-hidden whitespace-nowrap bg-white text-black py-4 px-6 border-8 border-gray-900 rounded-lg shadow-lg font-pressStart">
+  return (
+    <div className="mx-auto w-full max-w-full overflow-hidden whitespace-nowrap bg-white text-black py-2 px-4 sm:py-4 sm:px-6 border-8 border-gray-900 rounded-lg shadow-lg font-pressStart">
       <div
         className="inline-block animate-scroll"
         style={{ animationDuration: `30s` }}
@@ -17,7 +17,7 @@ function News() {
             transform: translateX(0%);
           }
           100% {
-            transform: translateX(50%);
+            transform: translateX(100%);
           }
         }
         .animate-scroll {
@@ -27,6 +27,7 @@ function News() {
           animation-fill-mode: forwards;
           animation-play-state: running;
           will-change: transform;
+          white-space: nowrap;
         }
       `}</style>
       <style jsx global>{`
@@ -34,10 +35,16 @@ function News() {
         .font-pressStart {
           font-family: 'Press Start 2P', cursive;
           font-weight: 400;
+          font-size: 0.8rem;
+        }
+        @media (min-width: 640px) {
+          .font-pressStart {
+            font-size: 1.25rem;
+          }
         }
       `}</style>
     </div>
   );
 }
 
-export default News
+export default News;
