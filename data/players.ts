@@ -100,7 +100,7 @@ export const players: Player[] = [
      icon: "/player-icons/default.png",
     tierRank: "A",
     mains: [
-      "Bowser",
+      "Donkey Kong",
       "Yoshi",
       "Mario",
 
