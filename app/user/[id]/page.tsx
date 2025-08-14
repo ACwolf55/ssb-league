@@ -69,6 +69,14 @@ export default function UserPage() {
           <p className="text-lg font-semibold">{player.podiums}</p>
         </div>
         <div className="bg-gray-800 rounded-xl p-4 text-center">
+          <p className="text-sm text-gray-400">Change in rank since last tourney</p>
+          <p className="text-lg font-semibold">{player.change}</p>
+        </div>
+        <div className="bg-gray-800 rounded-xl p-4 text-center">
+          <p className="text-sm text-gray-400">Last Tourney Notes</p>
+          <p className="text-lg font-semibold">{player.changeComments}</p>
+        </div>
+        <div className="bg-gray-800 rounded-xl p-4 text-center">
           <p className="text-sm text-gray-400">? other stats:?</p>
           <p className="text-lg font-semibold">{player.otherStats}</p>
         </div>

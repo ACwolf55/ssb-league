@@ -7,6 +7,8 @@ export type Player = {
   highestPlacement: string;
   championships: number;
   podiums: number;
+  change: number; // Positive or negative change in tier rank
+  changeComments: string; // Explanation for the change
   otherStats: string;
 };
 
@@ -31,6 +33,8 @@ export const players: Player[] = [
     highestPlacement: "1st at Salt Spring 2025",
     championships: 1,
     podiums: 3,
+    change: 0,
+    changeComments: "",
     otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
@@ -53,6 +57,8 @@ export const players: Player[] = [
     highestPlacement: "1st at Gebu 1",
     championships: 1,
     podiums: 1,
+      change: 0,
+    changeComments: "",
     otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
@@ -75,6 +81,8 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
+      change: 0,
+    changeComments: "",
      otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
@@ -89,6 +97,8 @@ export const players: Player[] = [
     highestPlacement: "1st at Gebu July 2025",
     championships: 1,
     podiums: 2,
+      change: 0,
+    changeComments: "",
      otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
@@ -104,6 +114,8 @@ export const players: Player[] = [
     highestPlacement: "2nd at Salt Spring 2025",
     championships: 0,
     podiums: 2,
+      change: 0,
+    changeComments: "",
      otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
@@ -117,6 +129,8 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
+      change: 0,
+    changeComments: "",
     otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
@@ -130,6 +144,8 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
+      change: 0,
+    changeComments: "",
      otherStats:"like idk what else we should have, but lets get more lol"
   },
    {
@@ -143,6 +159,8 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
+      change: 0,
+    changeComments: "",
      otherStats:"like idk what else we should have, but lets get more lol"
   },
    {
@@ -157,6 +175,8 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
+      change: 0,
+    changeComments: "",
      otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
@@ -174,6 +194,8 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
+      change: 0,
+    changeComments: "",
    otherStats:"like idk what else we should have, but lets get more lol"
   },
    {
@@ -189,6 +211,8 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
+      change: 0,
+    changeComments: "",
     otherStats:"like idk what else we should have, but lets get more lol"
   },
 ];
