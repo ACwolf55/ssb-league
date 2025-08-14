@@ -181,11 +181,11 @@ export const players: Player[] = [
   },
   {
     name: "Kicks",
-
      icon: "/player-icons/kicks2.png",
     tierRank: "C",
     mains: [
       "Samus",
+      "Wii Fit Trainer",
       "Ganondorf",
       "Rob",
 

@@ -16,7 +16,7 @@ const event = {
     { name: "UNK", odds: "+100" },
     { name: "FTF", odds: "+100" },
     { name: "Lamp", odds: "+250" },
-    { name: "Kiks", odds: "+500" },
+    { name: "Kiks", odds: "+300" },
     { name: "Dylan", odds: "+600" },
   ],
   maybeParticipating: [
