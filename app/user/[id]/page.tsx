@@ -30,18 +30,23 @@ export default function UserPage() {
       {/* Player Name & Tier */}
       <div className="w-full max-w-md bg-gray-800 rounded-2xl p-6 shadow-lg text-center">
         <h1 className="text-3xl font-bold">{player.fullName || player.name}</h1>
-        <div
-          className="w-28 h-28 mx-auto my-4 rounded-full p-1
+<div
+  className="w-28 h-28 mx-auto my-4 rounded-full
   bg-gradient-to-br from-gray-300 via-yellow-300 to-yellow-500
   border-4 border-white
-  flex items-center justify-center"
-        >
-          <img
-            src={player.icon}
-            alt={`${player.name} icon`}
-            className="w-24 h-24 rounded-full object-cover"
-          />
-        </div>
+  flex items-center justify-center overflow-hidden"
+>
+  <img
+    src={player.icon}
+    alt="Player icon"
+    className="w-5/6 h-5/6 object-cover" 
+    onError={(e) => {
+      e.currentTarget.src = "/player-icons/default.png";
+    }}
+  />
+</div>
+
+
 
         <p className="text-xl mt-2">
           Tier Rank:{" "}
@@ -64,12 +69,8 @@ export default function UserPage() {
           <p className="text-lg font-semibold">{player.podiums}</p>
         </div>
         <div className="bg-gray-800 rounded-xl p-4 text-center">
-          <p className="text-sm text-gray-400">Total KOs</p>
-          <p className="text-lg font-semibold">{player.totalKOs}</p>
-        </div>
-        <div className="bg-gray-800 rounded-xl p-4 text-center">
-          <p className="text-sm text-gray-400">3-Stocks</p>
-          <p className="text-lg font-semibold">{player.threeStocks}</p>
+          <p className="text-sm text-gray-400">? other stats:?</p>
+          <p className="text-lg font-semibold">{player.otherStats}</p>
         </div>
       </div>
 

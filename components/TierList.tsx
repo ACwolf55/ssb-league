@@ -64,14 +64,14 @@ function TierList() {
   <div className="flex items-center space-x-4 bg-green-500 p-4 rounded-xl shadow-lg">
     <span className="text-2xl w-12">C</span>
     <div className="flex flex-wrap gap-4">
-      <Link href="/user/kiks">
-      <div className="bg-white text-black px-4 py-2 rounded-lg">Kiks</div>
+      <Link href="/user/kicks">
+      <div className="bg-white text-black px-4 py-2 rounded-lg">Kicks</div>
       </Link>
       <Link href="/user/adrian">
       <div className="bg-white text-black px-4 py-2 rounded-lg">Adrian</div>
       </Link>
-      <Link href="/user/dylan">
-      <div className="bg-white text-black px-4 py-2 rounded-lg">Dylan</div>
+      <Link href="/user/dog">
+      <div className="bg-white text-black px-4 py-2 rounded-lg">DOG</div>
       </Link>
     </div>
   </div>
@@ -80,8 +80,8 @@ function TierList() {
   <div className="flex items-center space-x-4 bg-blue-500 p-4 rounded-xl shadow-lg">
     <span className="text-2xl w-12">D</span>
     <div className="flex flex-wrap gap-4">
-      <Link href="/user/mitch">
-      <div className="bg-white text-black px-4 py-2 rounded-lg">Mitch</div>
+      <Link href="/user/pippers">
+      <div className="bg-white text-black px-4 py-2 rounded-lg">pippers</div>
       </Link>
       <Link href="/user/dan">
       <div className="bg-white text-black px-4 py-2 rounded-lg">Dan</div>

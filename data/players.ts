@@ -7,15 +7,14 @@ export type Player = {
   highestPlacement: string;
   championships: number;
   podiums: number;
-  totalKOs: number;
-  threeStocks: number;
+  otherStats: string;
 };
 
 export const players: Player[] = [
   {
     name: "ACJATB",
     fullName: 'AC "Just A Thang Baby"',
-    icon: "/player-icons/acjatb1.png",
+    icon: "/player-icons/acjatb3.png",
     tierRank: "A",
     mains: [
       "Zelda",
@@ -31,9 +30,8 @@ export const players: Player[] = [
     ],
     highestPlacement: "1st at Salt Spring 2025",
     championships: 1,
-    podiums: 2,
-    totalKOs: 0,
-    threeStocks: 0,
+    podiums: 3,
+    otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
     name: "FTF",
@@ -55,8 +53,7 @@ export const players: Player[] = [
     highestPlacement: "1st at Gebu 1",
     championships: 1,
     podiums: 1,
-    totalKOs: 0,
-    threeStocks: 0,
+    otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
     name: "Lamp",
@@ -73,12 +70,12 @@ export const players: Player[] = [
       "Toon Link",
       "Kazuya",
       "Hero",
+      "Robin"
     ],
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
-    totalKOs: 0,
-    threeStocks: 0,
+     otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
     name: "Gebu",
@@ -92,8 +89,7 @@ export const players: Player[] = [
     highestPlacement: "1st at Gebu July 2025",
     championships: 1,
     podiums: 2,
-    totalKOs: 0,
-    threeStocks: 0,
+     otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
     name: "UNK",
@@ -107,9 +103,8 @@ export const players: Player[] = [
     ],
     highestPlacement: "2nd at Salt Spring 2025",
     championships: 0,
-    podiums: 1,
-    totalKOs: 0,
-    threeStocks: 0,
+    podiums: 2,
+     otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
     name: "TY",
@@ -120,15 +115,13 @@ export const players: Player[] = [
     
     ],
     highestPlacement: "-",
-      championships: 0,
+    championships: 0,
     podiums: 0,
-    totalKOs: 0,
-    threeStocks: 0,
+    otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
-    name: "Dylan",
-    fullName: "Dragon-Badger",
-     icon: "/player-icons/dylan2.png",
+    name: "DOG",
+     icon: "/player-icons/dog1.png",
     tierRank: "C",
     mains: [
       "King Dedede",
@@ -137,13 +130,11 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
-    totalKOs: 0,
-    threeStocks: 0,
+     otherStats:"like idk what else we should have, but lets get more lol"
   },
    {
-    name: "Mitch",
-    fullName: "Sekai Hakaimono",
-     icon: "/player-icons/mitch2.png",
+    name: "pippers",
+     icon: "/player-icons/default.png",
     tierRank: "D",
     mains: [
       "Lucina",
@@ -152,8 +143,7 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
-    totalKOs: 0,
-    threeStocks: 0,
+     otherStats:"like idk what else we should have, but lets get more lol"
   },
    {
     name: "Adrian",
@@ -167,23 +157,24 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
-    totalKOs: 0,
-    threeStocks: 0,
+     otherStats:"like idk what else we should have, but lets get more lol"
   },
   {
-    name: "Kiks",
+    name: "Kicks",
 
-     icon: "/player-icons/kiks1.png",
+     icon: "/player-icons/kicks2.png",
     tierRank: "C",
     mains: [
+      "Samus",
       "Ganondorf",
+      "Rob",
+
    
     ],
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
-    totalKOs: 0,
-    threeStocks: 0,
+   otherStats:"like idk what else we should have, but lets get more lol"
   },
    {
     name: "Dan",
@@ -198,7 +189,6 @@ export const players: Player[] = [
     highestPlacement: "-",
     championships: 0,
     podiums: 0,
-    totalKOs: 0,
-    threeStocks: 0,
+    otherStats:"like idk what else we should have, but lets get more lol"
   },
 ];
