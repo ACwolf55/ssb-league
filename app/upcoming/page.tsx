@@ -12,16 +12,17 @@ const event = {
   location: "FTF Ranch, Lockport",
   participants: [
     { name: "Gebu", odds: "-100" },
-    { name: "ACJATB", odds: "+100" },
     { name: "UNK", odds: "+100" },
     { name: "FTF", odds: "+100" },
-    { name: "Lamp", odds: "+250" },
+    { name: "ACJATB", odds: "+150" },
+    { name: "Lamp", odds: "+150" },
     { name: "Kiks", odds: "+200" },
     { name: "Dylan", odds: "+600" },
   ],
   maybeParticipating: [
     { name: "Ty", odds: "+250" },
     { name: "Adrian", odds: "+500" },
+     { name: "Dan", odds: "+10000" },
   ],
   rules: [
     "3 stock",

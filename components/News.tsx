@@ -15,10 +15,10 @@ function News() {
       <style jsx>{`
         @keyframes scroll {
           0% {
-            transform: translateX(-100%);
+            transform: translateX(0%); /* start off-screen to the right */
           }
           100% {
-            transform: translateX(0%);
+            transform: translateX(-100%); /* move off-screen to the left */
           }
         }
 
