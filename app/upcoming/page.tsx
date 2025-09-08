@@ -11,18 +11,18 @@ const event = {
   time: "?",
   location: "?",
   participants: [
+    { name: "UNK", odds: "" },
+   { name: "Kicks", odds: "" },
+   { name: "Gebu", odds: "" },
+   { name: "FTF", odds: "" },
+   { name: "ACJATB", odds: "" },
+   { name: "Lamp", odds: "" },
+   { name: "DOG", odds: "" },
+   { name: "Ty", odds: "" },
+   { name: "A3G", odds: "" },
    
   ],
   maybeParticipating: [
-     { name: "UNK", odds: "" },
-    { name: "Kicks", odds: "" },
-    { name: "Gebu", odds: "" },
-    { name: "FTF", odds: "" },
-    { name: "ACJATB", odds: "" },
-    { name: "Lamp", odds: "" },
-    { name: "DOG", odds: "" },
-    { name: "Ty", odds: "" },
-    { name: "A3G", odds: "" },
      { name: "CheatCode", odds: "" },
   ],
   rules: [
