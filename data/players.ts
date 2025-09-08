@@ -17,7 +17,7 @@ export const players: Player[] = [
     name: "ACJATB",
     fullName: 'AC "Just A Thang Baby"',
     icon: "/player-icons/acjatb3.png",
-    tierRank: "A",
+    tierRank: "B",
     mains: [
       "Zelda",
       "Pikachu",
@@ -78,7 +78,7 @@ export const players: Player[] = [
       "Mr Game and Watch",
       "Hero",
     ],
-    highestPlacement: "-",
+    highestPlacement: "Top 4 at Salt Summer 2025",
     championships: 0,
     podiums: 0,
       change: 0,
@@ -88,15 +88,16 @@ export const players: Player[] = [
   {
     name: "Gebu",
      icon: "/player-icons/gebu2.png",
-    tierRank: "S",
+    tierRank: "A",
     mains: [
       "Bowser",
       "Mega Man",
       "Ike",
+      "Piranha Plant",
     ],
     highestPlacement: "1st at Gebu July 2025",
     championships: 1,
-    podiums: 2,
+    podiums: 3,
       change: 0,
     changeComments: "",
      otherStats:"like idk what else we should have, but lets get more lol"
@@ -112,7 +113,7 @@ export const players: Player[] = [
 
     ],
     highestPlacement: "2nd at Salt Spring 2025",
-    championships: 0,
+    championships: 1,
     podiums: 2,
       change: 0,
     changeComments: "",
@@ -121,12 +122,12 @@ export const players: Player[] = [
   {
     name: "TY",
      icon: "/player-icons/ty.png",
-    tierRank: "B",
+    tierRank: "C",
     mains: [
       "Pokemon Trainer",
     
     ],
-    highestPlacement: "-",
+    highestPlacement: "Top 4 at Gebu July 2025",
     championships: 0,
     podiums: 0,
       change: 0,
@@ -164,15 +165,21 @@ export const players: Player[] = [
      otherStats:"like idk what else we should have, but lets get more lol"
   },
    {
-    name: "Adrian",
+    name: "A3G",
     fullName: "Whirlpool",
      icon: "/player-icons/adrian1.svg",
-    tierRank: "C",
+    tierRank: "B",
     mains: [
       "Link",
+      "Dark Samus",
+      "Samus",
+      "Young Link",
+      "Toon Link",
+      "Bowser",
+      "Wolf"
    
     ],
-    highestPlacement: "-",
+    highestPlacement: "Top 6",
     championships: 0,
     podiums: 0,
       change: 0,
@@ -182,7 +189,7 @@ export const players: Player[] = [
   {
     name: "Kicks",
      icon: "/player-icons/kicks2.png",
-    tierRank: "C",
+    tierRank: "A",
     mains: [
       "Samus",
       "Wii Fit Trainer",
@@ -191,9 +198,9 @@ export const players: Player[] = [
 
    
     ],
-    highestPlacement: "-",
+    highestPlacement: "2nd place at Salt Summer 2025",
     championships: 0,
-    podiums: 0,
+    podiums: 1,
       change: 0,
     changeComments: "",
    otherStats:"like idk what else we should have, but lets get more lol"

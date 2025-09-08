@@ -6,6 +6,7 @@ import TierList from "@/components/TierList";
 import News from "@/components/News";
 
 import Link from "next/link";
+import SaltSummer2025 from "@/components/SaltSummer2025";
 
 
 export default function Home() {
@@ -46,11 +47,12 @@ export default function Home() {
             hover:bg-gray-500
           "
         >
-          &#10024; See upcoming Salt &#129474; Summer 2025 &#10024;
+          &#10024; New Tourney   Annoucing Soon ! ! &#10024;
         </Link>
 
         <TierList />
-        <GebuJuly2025 />
+        <SaltSummer2025 />
+        <GebuJuly2025 />  
       </main>
 
       <footer className="flex gap-6 flex-wrap items-center justify-center p-4">

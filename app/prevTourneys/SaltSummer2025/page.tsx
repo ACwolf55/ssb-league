@@ -6,28 +6,37 @@ import Header from "@/components/Header";
 import Link from "next/link";
 
 const event = {
-  title: "-PENDING-`",
-  date: "? Oct. 24th ?",
-  time: "?",
-  location: "?",
+  title: "Salt Summer 2025",
+  date: "August 30, 2025",
+  time: "2:00 PM?",
+  location: "FTF Ranch, Lockport",
   participants: [
-   
+    { name: "Gebu", odds: "-100" },
+    { name: "UNK", odds: "+100" },
+    { name: "FTF", odds: "+100" },
+    { name: "ACJATB", odds: "+150" },
+    { name: "Lamp", odds: "+150" },
+    { name: "Kiks", odds: "+200" },
+    { name: "Dylan", odds: "+600" },
   ],
   maybeParticipating: [
-     { name: "UNK", odds: "" },
-    { name: "Kicks", odds: "" },
-    { name: "Gebu", odds: "" },
-    { name: "FTF", odds: "" },
-    { name: "ACJATB", odds: "" },
-    { name: "Lamp", odds: "" },
-    { name: "DOG", odds: "" },
-    { name: "Ty", odds: "" },
-    { name: "A3G", odds: "" },
-     { name: "CheatCode", odds: "" },
+    { name: "Ty", odds: "+250" },
+    { name: "Adrian", odds: "+500" },
+     { name: "Dan", odds: "+10000" },
   ],
   rules: [
-    "Shirts Optional",
-    
+    "3 stock",
+    "Battlefield or Omega stages only, set at random",
+    "Prelims: everybody plays everybody one match to set seeding for tournament",
+    "Top 2 seeds get a bye in the first round of the tournament",
+    "once a character is used they cannot be used again",
+    "in Best-of sets/ series matches, players may cannot switch characters between matches",
+    "Characters must be selected at same time",
+    "1 minute to decide character, before starting match",
+    "Best of 3 for tournament matches",
+    "Best of 5 for finals",
+    "Going Shirtless - IS ALLOWED",
+    "Winner's Trophy still pending...",
   ],
 };
 
@@ -76,7 +85,7 @@ export default function Upcoming() {
 
 
         {/* Participants and Odds */}
-        <div className="mb-2 mt-10">
+        <div className="mb-6 mt-10">
           <h2 className="text-2xl font-semibold mb-4 text-center">
             Participants & Winning Odds
           </h2>
