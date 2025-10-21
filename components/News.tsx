@@ -2,7 +2,7 @@ import React from "react";
 
 function News() {
   const text =
-    " \u25BC Next Tournament \u25BC : Pending ! - October ? \u25BC :O Spooky ? \u25BC";
+    " \u25BC Next Tournament \u25BC October 25th - 3pm \u25BC UNCLE KICK'S FUN HOUSE \u25BC";
 
   return (
     <div className="mx-auto w-full max-w-full overflow-hidden whitespace-nowrap bg-white text-black py-2 px-4 sm:py-4 sm:px-6 border-8 border-gray-900 rounded-lg shadow-lg font-pressStart">

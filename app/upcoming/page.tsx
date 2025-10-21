@@ -6,27 +6,33 @@ import Header from "@/components/Header";
 import Link from "next/link";
 
 const event = {
-  title: "-PENDING-`",
-  date: "? Oct. 24th ?",
-  time: "?",
-  location: "?",
+  title: "UNCLE KICK'S FUN HOUSE TOURNAMENT - Trick or Treat Halloween Special",
+  date: " Oct. 25th",
+  time: "3:00 PM EST",
+  location: "Williamsville - UNCLE KICK'S FUN HOUSE",
   participants: [
-    { name: "UNK", odds: "" },
-   { name: "Kicks", odds: "" },
-   { name: "Gebu", odds: "" },
-   { name: "FTF", odds: "" },
-   { name: "ACJATB", odds: "" },
-   { name: "Lamp", odds: "" },
-   { name: "DOG", odds: "" },
-   { name: "Ty", odds: "" },
-   { name: "A3G", odds: "" },
+    { name: "UNK", odds: "+100" },
+   { name: "Kicks", odds: "+100" },
+   { name: "Gebu", odds: "+100" },
+   { name: "FTF", odds: "+300" },
+   { name: "ACJATB", odds: "+300" },
+   { name: "Lamp", odds: "+350" },
+   { name: "A3G", odds: "+350" },
+   { name: "Ty", odds: "+500" },
+   { name: "DOG", odds: "+500" },
    
   ],
   maybeParticipating: [
-     { name: "CheatCode", odds: "" },
+     { name: "CheatCode", odds: "+♾️" },
   ],
   rules: [
     "Shirts Optional",
+    "Food and Beer for everyone!",
+    "Seeded bracket - everbody plays each other once",
+    "3 stock (of course)",
+    "Best of 3 series in playoffs",
+    "Finals & 3rd place match are best of 5",
+    "Special Trick or Treat rules for finals"
     
   ],
 };

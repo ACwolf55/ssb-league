@@ -47,7 +47,7 @@ export default function Home() {
             hover:bg-gray-500
           "
         >
-          &#10024; New Tourney   Annoucing Soon ! ! &#10024;
+          👻💀 UNCLE KICK'S FUN HOUSE TOURNAMENT - THIS WEEKEND 💀👻
         </Link>
 
         <TierList />
