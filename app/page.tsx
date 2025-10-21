@@ -8,7 +8,6 @@ import News from "@/components/News";
 import Link from "next/link";
 import SaltSummer2025 from "@/components/SaltSummer2025";
 
-
 export default function Home() {
   return (
     <div
@@ -37,22 +36,29 @@ export default function Home() {
       <main className="w-full max-w-4xl flex flex-col items-center gap-10">
         <News />
 
-        <Link
-          href="/upcoming"
-          className="
-            block w-full sm:max-w-xl
-            bg-white text-black text-center 
-            text-2xl sm:text-3xl font-extrabold 
-            rounded-2xl px-6 py-4 
-            hover:bg-gray-500
-          "
-        >
-          👻💀 UNCLE KICK'S FUN HOUSE TOURNAMENT - THIS WEEKEND 💀👻
-        </Link>
+       <Link
+  href="/upcoming"
+  className="relative block w-full sm:max-w-xl text-center text-2xl sm:text-3xl font-extrabold rounded-2xl px-6 py-4 overflow-hidden group"
+>
+  {/* Background image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/banners/funhouse_banner.png')" }}
+  />
+
+  {/* Purple overlay film */}
+  <div className="absolute inset-0 bg-purple-900/10 group-hover:bg-purple-900/40 transition-all duration-300" />
+
+  {/* Text with orange shadow/glow */}
+  <span className="relative z-10 text-white drop-shadow-[0_0_10px_orange]">
+    👻💀 UNCLE KICK'S FUN HOUSE TOURNAMENT - THIS WEEKEND 💀👻
+  </span>
+</Link>
+
 
         <TierList />
         <SaltSummer2025 />
-        <GebuJuly2025 />  
+        <GebuJuly2025 />
       </main>
 
       <footer className="flex gap-6 flex-wrap items-center justify-center p-4">

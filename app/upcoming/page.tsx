@@ -9,7 +9,7 @@ const event = {
   title: "👻UNCLE KICK'S FUN HOUSE TOURNAMENT - Trick or Treat Halloween Special🍬",
   date: " Oct. 25th",
   time: "3:00 PM EST",
-  location: "Williamsville - UNCLE KICK'S FUN HOUSE",
+  location: "UNCLE KICK'S FUN HOUSE - Williamsville, NY",
   participants: [
     { name: "UNK", odds: "+100" },
    { name: "Kicks", odds: "+100" },
@@ -30,6 +30,7 @@ const event = {
     "Shirts Optional",
     "Food and Beer for everyone!",
     "Seeded bracket - everybody plays everybody once",
+    "If Tied Seeds, placement wil be dicussed civily among participants",
     "3 stock (of course)",
     "Best of 3 series in playoffs",
     "Finals & 3rd place match are best of 5",
