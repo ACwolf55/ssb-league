@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 
 const event = {
-  title: "UNCLE KICK'S FUN HOUSE TOURNAMENT - Trick or Treat Halloween Special",
+  title: "👻UNCLE KICK'S FUN HOUSE TOURNAMENT - Trick or Treat Halloween Special🍬",
   date: " Oct. 25th",
   time: "3:00 PM EST",
   location: "Williamsville - UNCLE KICK'S FUN HOUSE",
@@ -23,16 +23,33 @@ const event = {
    
   ],
   maybeParticipating: [
+    { name: "pippers", odds: "+850" },
      { name: "CheatCode", odds: "+♾️" },
   ],
   rules: [
     "Shirts Optional",
     "Food and Beer for everyone!",
-    "Seeded bracket - everbody plays each other once",
+    "Seeded bracket - everybody plays everybody once",
     "3 stock (of course)",
     "Best of 3 series in playoffs",
     "Finals & 3rd place match are best of 5",
-    "Special Trick or Treat rules for finals"
+    "🍬Special Trick or Treat rules for finals🍬",
+     {
+    title: "Allowed Maps:",
+    maps: [
+      "Battlefield",
+      "Final Destination",
+      "Pokemon Stadium 2",
+      "Small Battlefield",
+      "Smashville",
+      "Town and City",
+      "Kalos Pokemon League",
+      "Hollow Bastion",
+      "Yoshi Story",
+      "Northern Cave",
+      "Fountain of Dreams",
+    ]
+  }
     
   ],
 };
@@ -70,14 +87,27 @@ export default function Upcoming() {
         </div>
 
         {/* Rules */}
-        <div className="mt-10 mb-6">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Rules</h2>
-          <ul className="list-disc list-inside space-y-2 max-w-xl mx-auto text-gray-300">
-            {event.rules.map((rule, idx) => (
-              <li key={idx}>{rule}</li>
+<div className="mt-10 mb-6">
+  <h2 className="text-2xl font-semibold mb-4 text-center">Rules</h2>
+
+  <ul className="list-disc list-inside space-y-2 max-w-xl mx-auto text-gray-300">
+    {event.rules.map((rule, idx) => (
+      typeof rule === "string" ? (
+        <li key={idx}>{rule}</li>
+      ) : (
+        <li key={idx}>
+          <strong className="text-orange-400">{rule.title}</strong>
+          <ul className="list-disc list-inside pl-5 mt-1 space-y-1 text-gray-400">
+            {rule.maps.map((map, mapIdx) => (
+              <li key={mapIdx}>{map}</li>
             ))}
           </ul>
-        </div>
+        </li>
+      )
+    ))}
+  </ul>
+</div>
+
 
 
 

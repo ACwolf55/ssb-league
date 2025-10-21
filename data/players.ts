@@ -206,7 +206,7 @@ export const players: Player[] = [
    otherStats:"like idk what else we should have, but lets get more lol"
   },
    {
-    name: "Dan",
+    name: "CheatCode",
     fullName: "CheatCode",
      icon: "/player-icons/default.png",
     tierRank: "D",
