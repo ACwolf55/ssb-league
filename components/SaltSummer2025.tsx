@@ -15,7 +15,7 @@ export default function SaltSummer2025() {
         <div className="border-2 flex flex-col items-center border-yellow-400 p-2 text-center bg-gray-700 rounded-xl w-full max-w-[220px]">
           <h3 className="text-yellow-300 font-bold mb-2 text-sm">Winner 👑</h3>
           <Link href="/user/UNK">
-          <BattleBox name="UNK" sprite="/sprites/Donkey_Kong.png" />
+          <BattleBox name="UNK" sprite="/sprites/donkey_kong.png" />
           </Link>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function SaltSummer2025() {
       <div className="w-full flex justify-center gap-2 sm:gap-6">
         <div className="border-2 border-blue-500 bg-gray-700 p-4 rounded-xl flex items-center gap-2 sm:gap-4">
           <Link href="/user/UNK">
-          <BattleBox name="UNK" sprite="/sprites/Donkey_Kong.png"  />
+          <BattleBox name="UNK" sprite="/sprites/donkey_kong.png"  />
           </Link>
           <Link href="/user/Kicks">
           <BattleBox name="Kicks" sprite="/sprites/wii_fit_trainer.png"/>
@@ -44,10 +44,10 @@ export default function SaltSummer2025() {
         </div>
         <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
           <Link href="/user/Lamp">
-          <BattleBox name="Lamp" sprite="/sprites/Cloud.png"/>
+          <BattleBox name="Lamp" sprite="/sprites/cloud.png"/>
           </Link>
           <Link href="/user/kicks">
-          <BattleBox name="Kicks" sprite="/sprites/Ganondorf.png"/>
+          <BattleBox name="Kicks" sprite="/sprites/ganondorf.png"/>
           </Link>
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function SaltSummer2025() {
       <BattleBox name="FTF" sprite="/sprites/ganondorf.png" />
     </Link>
     <Link href="/user/Gebu">
-      <BattleBox name="Gebu" sprite="/sprites/Mega_man.png" />
+      <BattleBox name="Gebu" sprite="/sprites/mega_man.png" />
     </Link>
   </div>
   <div className="border-2 border-blue-500 bg-gray-700  p-3 rounded-xl flex items-center gap-1 sm:gap-2 min-w-[140px]">
