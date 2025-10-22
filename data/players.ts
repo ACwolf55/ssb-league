@@ -104,7 +104,7 @@ export const players: Player[] = [
   },
   {
     name: "UNK",
-     icon: "/player-icons/unk1.png",
+     icon: "/player-icons/unk2.png",
     tierRank: "A",
     mains: [
       "Donkey Kong",
