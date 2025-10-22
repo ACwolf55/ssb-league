@@ -2,7 +2,6 @@
 
 import React from "react";
 import Header from "@/components/Header";
-
 import Link from "next/link";
 
 const event = {
@@ -28,12 +27,12 @@ const event = {
   rules: [
     "Shirts Optional",
     "Food and Beer for everyone!",
-    "Seeded bracket - everybody plays everybody once",
-    "If Tied Seeds, placement wil be dicussed civily among participants",
     "3 stock (of course)",
-    "Best of 3 series in playoffs",
-    "Finals & 3rd place match are best of 5",
-    "🍬Special Trick or Treat rules for finals🍬",
+    "Tournament will be Pre-Seeded",
+    "No prelims, will go straight into tournament",
+    "Double Elimination",
+    "Winner finals and Loser finals are best of 3",
+    "🍬Special Trick or Treat rules🍬",
      {
     title: "Allowed Maps:",
     maps: [

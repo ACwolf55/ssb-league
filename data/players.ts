@@ -92,8 +92,9 @@ export const players: Player[] = [
     mains: [
       "Bowser",
       "Mega Man",
-      "Ike",
       "Piranha Plant",
+      "Mewtwo",
+      "Ike",
     ],
     highestPlacement: "1st at Gebu July 2025",
     championships: 1,
@@ -109,7 +110,9 @@ export const players: Player[] = [
     mains: [
       "Donkey Kong",
       "Yoshi",
-      "Mario",
+      "Samus",
+      "Kirby",
+      "ROB"
 
     ],
     highestPlacement: "2nd at Salt Spring 2025",
@@ -140,6 +143,9 @@ export const players: Player[] = [
     tierRank: "C",
     mains: [
       "King Dedede",
+      "Dr Mario",
+      "Captain Falcon",
+      "Joker",
     
     ],
     highestPlacement: "-",
@@ -171,12 +177,10 @@ export const players: Player[] = [
     tierRank: "B",
     mains: [
       "Link",
-      "Dark Samus",
-      "Samus",
-      "Young Link",
       "Toon Link",
-      "Bowser",
-      "Wolf"
+      "Wolf",
+      "Young Link",
+
    
     ],
     highestPlacement: "Top 6 Salt Summer 2025",
@@ -192,9 +196,10 @@ export const players: Player[] = [
     tierRank: "A",
     mains: [
       "Wii Fit Trainer",
-      "Rob",
       "Ganondorf",
-      "Samus",
+      "Sephiroth",
+      "Kirby",
+      "Samus"
 
    
     ],
