@@ -179,7 +179,7 @@ export const players: Player[] = [
       "Wolf"
    
     ],
-    highestPlacement: "Top 6",
+    highestPlacement: "Top 6 Salt Summer 2025",
     championships: 0,
     podiums: 0,
       change: 0,

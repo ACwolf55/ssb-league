@@ -26,9 +26,6 @@ function TierList() {
         UNK
       </div>
     </Link>
-    <Link href="/user/kicks">
-      <div className="bg-white text-black px-4 py-2 rounded-lg">Kicks</div>
-      </Link>
       <Link href="/user/Gebu">
       <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
         Gebu
@@ -41,25 +38,25 @@ function TierList() {
 <div className="flex items-center space-x-4 bg-yellow-500 p-4 rounded-xl shadow-lg">
   <span className="text-2xl w-12">B</span>
   <div className="flex flex-wrap gap-4">
+    <Link href="/user/ACJATB">
+      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+        AC JATB
+      </div>
+    </Link>
     <Link href="/user/FTF">
       <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
         FTF
       </div>
     </Link>
+    <Link href="/user/kicks">
+      <div className="bg-white text-black px-4 py-2 rounded-lg">Kicks</div>
+      </Link>
     <Link href="/user/Lamp">
       <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
        The Lamp
       </div>
     </Link>
 
-    <Link href="/user/ACJATB">
-      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
-        AC JATB
-      </div>
-    </Link>
-    <Link href="/user/A3G">
-      <div className="bg-white text-black px-4 py-2 rounded-lg">A3G</div>
-      </Link>
   </div>
 </div>
 
@@ -68,9 +65,12 @@ function TierList() {
   <div className="flex items-center space-x-4 bg-green-500 p-4 rounded-xl shadow-lg">
     <span className="text-2xl w-12">C</span>
     <div className="flex flex-wrap gap-4">
-     <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
-        Ty
-      </div>
+    <Link href="/user/A3G">
+      <div className="bg-white text-black px-4 py-2 rounded-lg">A3G</div>
+      </Link>
+     <Link href="/user/TY">
+      <div className="bg-white text-black px-4 py-2 rounded-lg">TY</div>
+      </Link>
       <Link href="/user/dog">
       <div className="bg-white text-black px-4 py-2 rounded-lg">DOG</div>
       </Link>
