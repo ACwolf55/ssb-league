@@ -74,6 +74,9 @@ function TierList() {
       <Link href="/user/dog">
       <div className="bg-white text-black px-4 py-2 rounded-lg">DOG</div>
       </Link>
+        <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+       Travis
+      </div>
 
       <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
        DQ
@@ -88,8 +91,8 @@ function TierList() {
       <Link href="/user/pippers">
       <div className="bg-white text-black px-4 py-2 rounded-lg">pippers</div>
       </Link>
-      <Link href="/user/dan">
-      <div className="bg-white text-black px-4 py-2 rounded-lg">Dan</div>
+      <Link href="/user/CheatCode">
+      <div className="bg-white text-black px-4 py-2 rounded-lg">CheatCode</div>
       </Link>
     </div>
   </div>

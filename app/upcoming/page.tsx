@@ -18,13 +18,12 @@ const event = {
    { name: "ACJATB", odds: "+300" },
    { name: "Lamp", odds: "+350" },
    { name: "A3G", odds: "+350" },
-   { name: "Ty", odds: "+500" },
+  { name: "Travis", odds: "+450" },
    { name: "DOG", odds: "+500" },
    
   ],
   maybeParticipating: [
-    { name: "pippers", odds: "+850" },
-     { name: "CheatCode", odds: "+♾️" },
+    { name: "CheatCode", odds: "+♾️" },
   ],
   rules: [
     "Shirts Optional",
