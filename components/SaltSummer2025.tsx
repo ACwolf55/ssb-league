@@ -39,7 +39,7 @@ export default function SaltSummer2025() {
           <BattleBox name="UNK" sprite="/sprites/samus.png"/>
           </Link>
           <Link href="/user/Gebu">
-          <BattleBox name="Gebu" sprite="/sprites/packun_flower.png"/>
+          <BattleBox name="Gebu" sprite="/sprites/piranha_plant.png"/>
           </Link>
         </div>
         <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
