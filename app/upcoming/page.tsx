@@ -5,48 +5,31 @@ import Header from "@/components/Header";
 import Link from "next/link";
 
 const event = {
-  title: "👻UNCLE KICK'S FUN HOUSE TOURNAMENT - Trick or Treat Halloween Special🍬",
-  date: " Oct. 25th",
-  time: "3:00 PM EST",
-  location: "UNCLE KICK'S FUN HOUSE - Williamsville, NY",
+  title: "PENDING",
+  date: " ",
+  time: "",
+  location: "",
   participants: [
-    { name: "UNK", odds: "+100" },
-   { name: "Kicks", odds: "+100" },
-   { name: "Gebu", odds: "+100" },
-   { name: "FTF", odds: "+300" },
-   { name: "ACJATB", odds: "+300" },
-   { name: "Lamp", odds: "+350" },
-   { name: "A3G", odds: "+350" },
-  { name: "Travis", odds: "+450" },
-   { name: "DOG", odds: "+500" },
+    { name: "UNK", odds: "" },
+   { name: "Kicks", odds: "" },
+   { name: "Gebu", odds: "" },
+   { name: "FTF", odds: "" },
+   { name: "ACJATB", odds: "" },
+   { name: "Lamp", odds: "" },
+   { name: "A3G", odds: "" },
+  { name: "Travis", odds: "" },
+   { name: "DOG", odds: "" },
    
   ],
   maybeParticipating: [
-    { name: "CheatCode", odds: "+♾️" },
+    { name: "CheatCode", odds: "" },
   ],
   rules: [
-    "Shirts Optional",
-    "Food and Beer for everyone!",
-    "3 stock (of course)",
-    "Tournament will be Pre-Seeded",
-    "No prelims, will go straight into tournament",
-    "Double Elimination",
-    "Winner finals and Loser finals are best of 3",
-    "🍬Special Trick or Treat rules🍬",
+    "",
+
      {
     title: "Allowed Maps:",
     maps: [
-      "Battlefield",
-      "Final Destination",
-      "Pokemon Stadium 2",
-      "Small Battlefield",
-      "Smashville",
-      "Town and City",
-      "Kalos Pokemon League",
-      "Hollow Bastion",
-      "Yoshi Story",
-      "Northern Cave",
-      "Fountain of Dreams",
     ]
   }
     

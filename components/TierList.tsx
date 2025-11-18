@@ -12,7 +12,11 @@ function TierList() {
 <div className="flex items-center space-x-4 bg-red-600 p-4 rounded-xl shadow-lg">
   <span className="text-2xl w-12">S</span>
   <div className="flex flex-wrap gap-4">
-  
+    <Link href="/user/Gebu">
+      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+        Gebu
+      </div>
+    </Link>
   </div>
 </div>
 
@@ -26,9 +30,14 @@ function TierList() {
         UNK
       </div>
     </Link>
-      <Link href="/user/Gebu">
+  <Link href="/user/FTF">
       <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
-        Gebu
+        FTF
+      </div>
+    </Link> 
+    <Link href="/user/ACJATB">
+      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
+        AC JATB
       </div>
     </Link>
   </div>
@@ -38,16 +47,7 @@ function TierList() {
 <div className="flex items-center space-x-4 bg-yellow-500 p-4 rounded-xl shadow-lg">
   <span className="text-2xl w-12">B</span>
   <div className="flex flex-wrap gap-4">
-    <Link href="/user/ACJATB">
-      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
-        AC JATB
-      </div>
-    </Link>
-    <Link href="/user/FTF">
-      <div className="bg-white text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-200">
-        FTF
-      </div>
-    </Link>
+    
     <Link href="/user/kicks">
       <div className="bg-white text-black px-4 py-2 rounded-lg">Kicks</div>
       </Link>

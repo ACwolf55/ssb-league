@@ -7,6 +7,7 @@ import News from "@/components/News";
 
 import Link from "next/link";
 import SaltSummer2025 from "@/components/SaltSummer2025";
+import FunHouse2025 from "@/components/FunHouse2025";
 
 export default function Home() {
   return (
@@ -57,6 +58,7 @@ export default function Home() {
 
 
         <TierList />
+        <FunHouse2025 />
         <SaltSummer2025 />
         <GebuJuly2025 />
       </main>
