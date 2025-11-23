@@ -5,24 +5,23 @@ import Header from "@/components/Header";
 import Link from "next/link";
 
 const event = {
-  title: "PENDING",
-  date: " ",
-  time: "",
-  location: "",
+  title: "Online Casual Tourney - Weekend of Thankgiving",
+  date: "11/28/ - 11/30",
+  time: "9:30 EST Start Time (Pending)",
+  location: "Online Areana",
   participants: [
-    { name: "UNK", odds: "" },
-   { name: "Kicks", odds: "" },
-   { name: "Gebu", odds: "" },
-   { name: "FTF", odds: "" },
-   { name: "ACJATB", odds: "" },
-   { name: "Lamp", odds: "" },
-   { name: "A3G", odds: "" },
-  { name: "Travis", odds: "" },
-   { name: "DOG", odds: "" },
+    { name: "UNK", odds: "+100" },
+   { name: "Kicks", odds: "+100" },
+   { name: "Gebu", odds: "-500" },
+   { name: "FTF", odds: "-100" },
+   { name: "ACJATB", odds: "+100" },
+   { name: "Lamp", odds: "+250" },
+   { name: "A3G", odds: "+300" },
+  
    
   ],
   maybeParticipating: [
-    { name: "CheatCode", odds: "" },
+    { name: "", odds: "" },
   ],
   rules: [
     "",

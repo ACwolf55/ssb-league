@@ -8,6 +8,7 @@ import News from "@/components/News";
 import Link from "next/link";
 import SaltSummer2025 from "@/components/SaltSummer2025";
 import FunHouse2025 from "@/components/FunHouse2025";
+import PrevPodiums from "@/components/PrevPodiums";
 
 export default function Home() {
   return (
@@ -37,27 +38,15 @@ export default function Home() {
       <main className="w-full max-w-4xl flex flex-col items-center gap-10">
         <News />
 
-       <Link
+      <Link
   href="/upcoming"
-  className="relative block w-full sm:max-w-xl text-center text-2xl sm:text-3xl font-extrabold rounded-2xl px-6 py-4 overflow-hidden group"
+  className="relative block w-full sm:max-w-xl text-center text-2xl sm:text-3xl font-extrabold rounded-2xl px-6 py-4 overflow-hidden group bg-white"
 >
-  {/* Background image */}
-  <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('/banners/funhouse_banner.png')" }}
-  />
-
-  {/* Purple overlay film */}
-  <div className="absolute inset-0 bg-purple-900/10 group-hover:bg-purple-900/40 transition-all duration-300" />
-
-  {/* Text with orange shadow/glow */}
-  <span className="relative z-10 text-white drop-shadow-[0_0_10px_orange]">
-    👻💀 UNCLE KICK'S FUN HOUSE TOURNAMENT - THIS WEEKEND 💀👻
-  </span>
+  <p className="text-black relative z-10">Thanksgiving Weekend Casual "Turkney - Tourney"  - Time 2 EAT</p>
 </Link>
 
-
         <TierList />
+        <PrevPodiums />
         <FunHouse2025 />
         <SaltSummer2025 />
         <GebuJuly2025 />
