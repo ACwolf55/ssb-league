@@ -38,12 +38,12 @@ export default function Home() {
       <main className="w-full max-w-4xl flex flex-col items-center gap-10">
         <News />
 
-      <Link
+      {/* <Link
   href="/upcoming"
   className="relative block w-full sm:max-w-xl text-center text-2xl sm:text-3xl font-extrabold rounded-2xl px-6 py-4 overflow-hidden group bg-white"
 >
-  <p className="text-black relative z-10">Thanksgiving Weekend Casual "Turkney - Tourney"  - Time 2 EAT</p>
-</Link>
+  <p className="text-black relative z-10">June Tourney</p>
+</Link> */}
 
         <TierList />
         <PrevPodiums />

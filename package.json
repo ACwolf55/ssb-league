@@ -8,20 +8,23 @@
     "start": "next start",
     "lint": "next lint"
   },
-    "engines": {
+  "engines": {
     "node": "22.x"
   },
   "dependencies": {
+    "@g-loot/react-tournament-brackets": "^1.0.31-rc",
+    "next": "15.4.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.4.3"
+    "react-svg-pan-zoom": "^3.13.1",
+    "styled-components": "^6.4.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

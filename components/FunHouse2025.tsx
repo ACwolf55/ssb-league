@@ -1,149 +1,152 @@
+"use client";
+
 import React from "react";
-import BattleBox from "./BattleBox";
-import Link from "next/link";
+import {
+  SingleEliminationBracket,
+  createTheme,
+} from "@g-loot/react-tournament-brackets";
+import type { MatchType } from "@g-loot/react-tournament-brackets";
+import TournamentMatch from "./TournamentMatch";
+
+const ssbTheme = createTheme({
+  textColor: {
+    main: "#ffffff",
+    highlighted: "#fbbf24",
+    dark: "#9ca3af",
+    disabled: "#4b5563",
+  },
+  matchBackground: { wonColor: "#1e3a5f", lostColor: "#1f2937" },
+  score: {
+    background: { wonColor: "#1d4ed8", lostColor: "#374151" },
+    text: {
+      highlightedWonColor: "#fbbf24",
+      highlightedLostColor: "#6b7280",
+    },
+  },
+  border: { color: "#374151", highlightedColor: "#fbbf24" },
+  roundHeaders: { background: "#111827" },
+  fontFamily: "ui-sans-serif, system-ui, sans-serif",
+  transitionTimingFunction: "ease",
+  disabledColor: "#4b5563",
+  canvasBackground: "#111827",
+});
+
+const matches: MatchType[] = [
+  // Grand Finals
+  {
+    id: 1,
+    name: "Grand Final",
+    nextMatchId: null,
+    tournamentRoundText: "Final",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "gebu-gf", name: "Gebu", isWinner: true, resultText: "1", status: "PLAYED" },
+      { id: "ftf-gf", name: "FTF", isWinner: false, resultText: "0", status: "PLAYED" },
+    ],
+  },
+  // Semifinals
+  {
+    id: 2,
+    name: "Semi Final 1",
+    nextMatchId: 1,
+    tournamentRoundText: "Semis",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "gebu-sf1", name: "Gebu", isWinner: true, resultText: "1", status: "PLAYED" },
+      { id: "ac-sf1", name: "AC", isWinner: false, resultText: "0", status: "PLAYED" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Semi Final 2",
+    nextMatchId: 1,
+    tournamentRoundText: "Semis",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "ftf-sf2", name: "FTF", isWinner: true, resultText: "1", status: "PLAYED" },
+      { id: "uncle-sf2", name: "Uncle", isWinner: false, resultText: "0", status: "PLAYED" },
+    ],
+  },
+  // Quarterfinals
+  {
+    id: 4,
+    name: "QF 1",
+    nextMatchId: 2,
+    tournamentRoundText: "QF",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "gebu-qf", name: "Gebu", isWinner: true, resultText: "1", status: "PLAYED" },
+      { id: "dog-qf", name: "Dog", isWinner: false, resultText: "0", status: "PLAYED" },
+    ],
+  },
+  {
+    id: 5,
+    name: "QF 2",
+    nextMatchId: 3,
+    tournamentRoundText: "QF",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "ftf-qf", name: "FTF", isWinner: true, resultText: "1", status: "PLAYED" },
+      { id: "kicks-qf", name: "Kicks", isWinner: false, resultText: "0", status: "PLAYED" },
+    ],
+  },
+  {
+    id: 6,
+    name: "QF 3",
+    nextMatchId: 2,
+    tournamentRoundText: "QF",
+    startTime: "2025",
+    state: "WALK_OVER",
+    participants: [
+      { id: "ac-bye", name: "AC", isWinner: true, resultText: "BYE", status: "WALK_OVER" },
+    ],
+  },
+  {
+    id: 7,
+    name: "QF 4",
+    nextMatchId: 3,
+    tournamentRoundText: "QF",
+    startTime: "2025",
+    state: "WALK_OVER",
+    participants: [
+      { id: "uncle-bye", name: "Uncle", isWinner: true, resultText: "BYE", status: "WALK_OVER" },
+    ],
+  },
+];
 
 export default function FunHouse2025() {
   return (
-    <div className="flex flex-col items-center space-y-6 mt-8 bg-black w-full px-3 p-8 min-h-screen">
-      <header className="bg-gray-200 text-black text-xl sm:text-3xl font-extrabold rounded-lg text-center w-full py-2">
+    <div className="flex flex-col items-center w-full mt-8 bg-gray-900 rounded-xl p-4">
+      <header className="bg-gray-200 text-black text-xl sm:text-3xl font-extrabold rounded-lg text-center w-full py-2 mb-6">
         UNCLE KICKS FunHouse 2025
       </header>
-
-      {/* Container for Winners and Losers brackets */}
-      <div className="w-full flex flex-col lg:flex-row justify-center items-start gap-12 mt-6">
-        
-        {/* WINNERS BRACKET - LEFT SIDE */}
-        <div className="flex flex-col items-center gap-6 flex-1">
-          <h2 className="text-2xl font-bold text-green-400">Winners Bracket</h2>
-
-          <div className="flex gap-6">
-            {/* Round 1 - Quarterfinals */}
-            <div className="flex flex-col gap-4">
-              <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex flex-col gap-2">
-                <Link href="/user/Dog"><BattleBox name="Dog" sprite="/sprites/dog.png" /></Link>
-                <Link href="/user/Travis"><BattleBox name="Travis" sprite="/sprites/travis.png" /></Link>
-              </div>
-              <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex flex-col gap-2">
-                <Link href="/user/FTF"><BattleBox name="FTF" sprite="/sprites/ftf.png" /></Link>
-                <Link href="/user/Kicks"><BattleBox name="Kicks" sprite="/sprites/kicks.png" /></Link>
-              </div>
-              <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex flex-col gap-2">
-                <Link href="/user/Uncle"><BattleBox name="Uncle" sprite="/sprites/uncle.png" /></Link>
-                <Link href="/user/A3D"><BattleBox name="A3D" sprite="/sprites/a3d.png" /></Link>
-              </div>
-              <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex flex-col gap-2">
-                <Link href="/user/AC"><BattleBox name="AC" sprite="/sprites/ac.png" /></Link>
-                <Link href="/user/Lamp"><BattleBox name="Lamp" sprite="/sprites/lamp.png" /></Link>
-              </div>
-            </div>
-
-            {/* Round 2 - Semifinals */}
-            <div className="flex flex-col gap-16 justify-center">
-              <div className="border-2 border-blue-500 bg-gray-700 p-3 rounded-xl flex flex-col gap-2">
-                <Link href="/user/Gebu"><BattleBox name="Gebu" sprite="/sprites/bowser.png" /></Link>
-                <Link href="/user/Dog"><BattleBox name="Dog" sprite="/sprites/dog.png" /></Link>
-              </div>
-              <div className="border-2 border-blue-500 bg-gray-700 p-3 rounded-xl flex flex-col gap-2">
-                <Link href="/user/Uncle"><BattleBox name="Uncle" sprite="/sprites/uncle.png" /></Link>
-                <Link href="/user/AC"><BattleBox name="AC" sprite="/sprites/zelda.png" /></Link>
-              </div>
-            </div>
-
-            {/* Round 3 - Winners Finals */}
-            <div className="flex flex-col justify-center">
-              <div className="border-2 border-blue-500 bg-gray-700 p-4 rounded-xl flex flex-col gap-2">
-                <Link href="/user/Gebu"><BattleBox name="Gebu" sprite="/sprites/bowser.png" /></Link>
-                <Link href="/user/AC"><BattleBox name="AC" sprite="/sprites/zelda.png" /></Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* LOSERS BRACKET - MIDDLE */}
-        <div className="flex flex-col items-center gap-6 flex-1">
-          <h2 className="text-2xl font-bold text-red-400">Losers Bracket</h2>
-
-          <div className="flex gap-6">
-            {/* Losers Round 1 */}
-            <div className="flex flex-col gap-4">
-              <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex flex-col gap-2">
-                <Link href="/user/Kicks"><BattleBox name="Kicks" sprite="/sprites/kicks.png" /></Link>
-                <Link href="/user/Dog"><BattleBox name="Dog" sprite="/sprites/dog.png" /></Link>
-              </div>
-              <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex flex-col gap-2">
-                <Link href="/user/DQ"><BattleBox name="DQ" sprite="/sprites/dq.png" /></Link>
-                <Link href="/user/Lamp"><BattleBox name="Lamp" sprite="/sprites/lamp.png" /></Link>
-              </div>
-              <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex flex-col gap-2">
-                <Link href="/user/A3D"><BattleBox name="A3D" sprite="/sprites/a3d.png" /></Link>
-                <Link href="/user/Travis"><BattleBox name="Travis" sprite="/sprites/travis.png" /></Link>
-              </div>
-            </div>
-
-            {/* Losers Round 2 */}
-            <div className="flex flex-col gap-16 justify-start pt-8">
-              <div className="border-2 border-blue-500 bg-gray-700 p-3 rounded-xl flex flex-col gap-2">
-                <Link href="/user/Uncle"><BattleBox name="Uncle" sprite="/sprites/uncle.png" /></Link>
-                <Link href="/user/Kicks"><BattleBox name="Kicks" sprite="/sprites/kicks.png" /></Link>
-              </div>
-              <div className="border-2 border-blue-500 bg-gray-700 p-3 rounded-xl flex flex-col gap-2">
-                <Link href="/user/Travis"><BattleBox name="Travis" sprite="/sprites/travis.png" /></Link>
-                <Link href="/user/FTF"><BattleBox name="FTF" sprite="/sprites/ftf.png" /></Link>
-              </div>
-            </div>
-
-            {/* Losers Round 3 */}
-            <div className="flex flex-col gap-8 justify-center">
-              <div className="border-2 border-blue-500 bg-gray-700 p-3 rounded-xl flex flex-col gap-2">
-                <Link href="/user/AC"><BattleBox name="AC" sprite="/sprites/ac.png" /></Link>
-                <Link href="/user/Kicks"><BattleBox name="Kicks" sprite="/sprites/kicks.png" /></Link>
-              </div>
-              <div className="border-2 border-blue-500 bg-gray-700 p-3 rounded-xl flex flex-col gap-2">
-                <Link href="/user/FTF"><BattleBox name="FTF" sprite="/sprites/ftf.png" /></Link>
-              </div>
-            </div>
-
-            {/* Losers Round 4 */}
-            <div className="flex flex-col justify-center">
-              <div className="border-2 border-blue-500 bg-gray-700 p-4 rounded-xl flex flex-col gap-2">
-                <Link href="/user/FTF"><BattleBox name="FTF" sprite="/sprites/ftf.png" /></Link>
-                <Link href="/user/AC"><BattleBox name="AC" sprite="/sprites/ac.png" /></Link>
-              </div>
-            </div>
-
-            {/* Losers Finals */}
-            <div className="flex flex-col justify-center">
-              <div className="border-2 border-blue-500 bg-gray-700 p-4 rounded-xl flex flex-col gap-2">
-                <Link href="/user/FTF"><BattleBox name="FTF" sprite="/sprites/ftf.png" /></Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Grand Finals & Champion Column */}
-        <div className="flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-bold text-yellow-400">Finals</h2>
-          
-          <div className="flex flex-col gap-6 justify-center h-full">
-            {/* Grand Finals */}
-            <div className="flex flex-col justify-center">
-              <div className="border-2 border-yellow-400 bg-gray-700 p-4 rounded-xl flex flex-col gap-3">
-                <Link href="/user/Gebu"><BattleBox name="Gebu" sprite="/sprites/bowser.png" /></Link>
-                <Link href="/user/FTF"><BattleBox name="FTF" sprite="/sprites/ftf.png" /></Link>
-              </div>
-            </div>
-
-            {/* Champion */}
-            <div className="flex flex-col justify-center">
-              <div className="border-2 flex flex-col items-center border-yellow-400 p-2 text-center bg-gray-700 rounded-xl w-full max-w-[220px]">
-                <h3 className="text-yellow-300 font-bold mb-2 text-sm">Winner 👑</h3>
-                <Link href="/user/Gebu">
-                  <BattleBox name="Gebu" sprite="/sprites/bowser.png" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="w-full overflow-x-auto overflow-y-auto" style={{ maxHeight: "600px" }}>
+        <SingleEliminationBracket
+          matches={matches}
+          matchComponent={TournamentMatch}
+          theme={ssbTheme}
+          options={{
+            style: {
+              roundHeader: {
+                isShown: true,
+                backgroundColor: "#111827",
+                fontColor: "#ffffff",
+                fontSize: 12,
+              },
+              connectorColor: "#6b7280",
+              connectorColorHighlight: "#fbbf24",
+              width: 180,
+              boxHeight: 80,
+              spaceBetweenColumns: 50,
+              spaceBetweenRows: 20,
+            },
+          }}
+        />
       </div>
     </div>
   );

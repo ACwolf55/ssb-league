@@ -1,93 +1,150 @@
-// components/GebuJuly25.tsx (or your existing file, replace contents)
+"use client";
+
 import React from "react";
-import BattleBox from "./BattleBox";
-import Link from "next/link";
+import {
+  SingleEliminationBracket,
+  createTheme,
+} from "@g-loot/react-tournament-brackets";
+import type { MatchType } from "@g-loot/react-tournament-brackets";
+import TournamentMatch from "./TournamentMatch";
+
+const ssbTheme = createTheme({
+  textColor: {
+    main: "#ffffff",
+    highlighted: "#fbbf24",
+    dark: "#9ca3af",
+    disabled: "#4b5563",
+  },
+  matchBackground: { wonColor: "#1e3a5f", lostColor: "#1f2937" },
+  score: {
+    background: { wonColor: "#1d4ed8", lostColor: "#374151" },
+    text: {
+      highlightedWonColor: "#fbbf24",
+      highlightedLostColor: "#6b7280",
+    },
+  },
+  border: { color: "#374151", highlightedColor: "#fbbf24" },
+  roundHeaders: { background: "#111827" },
+  fontFamily: "ui-sans-serif, system-ui, sans-serif",
+  transitionTimingFunction: "ease",
+  disabledColor: "#4b5563",
+  canvasBackground: "#111827",
+});
+
+const matches: MatchType[] = [
+  {
+    id: 1,
+    name: "Grand Final",
+    nextMatchId: null,
+    tournamentRoundText: "Final",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "gebu", name: "Gebu", isWinner: true, resultText: "1", status: "PLAYED" },
+      { id: "acjatb", name: "ACJATB", isWinner: false, resultText: "0", status: "PLAYED" },
+    ],
+  },
+  {
+    id: 2,
+    name: "Semi Final 1",
+    nextMatchId: 1,
+    tournamentRoundText: "Semis",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "gebu-s1", name: "Gebu", isWinner: true, resultText: "1", status: "PLAYED" },
+      { id: "ty", name: "TY", isWinner: false, resultText: "0", status: "PLAYED" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Semi Final 2",
+    nextMatchId: 1,
+    tournamentRoundText: "Semis",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "unk", name: "UNK", isWinner: false, resultText: "0", status: "PLAYED" },
+      { id: "acjatb-s2", name: "ACJATB", isWinner: true, resultText: "1", status: "PLAYED" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Round 1 - Match 1",
+    nextMatchId: 2,
+    tournamentRoundText: "Round 1",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "gebu-r1", name: "Gebu", isWinner: true, resultText: "1", status: "PLAYED" },
+      { id: "lamp", name: "Lamp", isWinner: false, resultText: "0", status: "PLAYED" },
+    ],
+  },
+  {
+    id: 5,
+    name: "Round 1 - Match 2",
+    nextMatchId: 3,
+    tournamentRoundText: "Round 1",
+    startTime: "2025",
+    state: "SCORE_DONE",
+    participants: [
+      { id: "ftf", name: "FTF", isWinner: false, resultText: "0", status: "PLAYED" },
+      { id: "unk-r1", name: "UNK", isWinner: true, resultText: "1", status: "PLAYED" },
+    ],
+  },
+  {
+    id: 6,
+    name: "Round 1 - TY Bye",
+    nextMatchId: 2,
+    tournamentRoundText: "Round 1",
+    startTime: "2025",
+    state: "WALK_OVER",
+    participants: [
+      { id: "ty-bye", name: "TY", isWinner: true, resultText: "BYE", status: "WALK_OVER" },
+    ],
+  },
+  {
+    id: 7,
+    name: "Round 1 - ACJATB Bye",
+    nextMatchId: 3,
+    tournamentRoundText: "Round 1",
+    startTime: "2025",
+    state: "WALK_OVER",
+    participants: [
+      { id: "acjatb-bye", name: "ACJATB", isWinner: true, resultText: "BYE", status: "WALK_OVER" },
+    ],
+  },
+];
 
 export default function GebuJuly2025() {
   return (
-    <div className="flex flex-col items-center space-y-6 mt-8 bg-gray-500 w-full px-3 p-8">
-      <header className="bg-gray-200  text-black text-xl sm:text-3xl font-extrabold rounded-lg text-center w-full py-2 rounded">
+    <div className="flex flex-col items-center w-full mt-8 bg-gray-900 rounded-xl p-4">
+      <header className="bg-gray-200 text-black text-xl sm:text-3xl font-extrabold rounded-lg text-center w-full py-2 mb-6">
         Gebu July 2025
       </header>
-
-      {/* Winner */}
-      <div className="w-full flex justify-center">
-        <div className="border-2 flex flex-col items-center border-yellow-400 p-2 text-center bg-gray-700 rounded-xl w-full max-w-[220px]">
-          <h3 className="text-yellow-300 font-bold mb-2 text-sm">Winner 👑</h3>
-          <Link href="/user/Gebu">
-          <BattleBox name="Gebu" sprite="/sprites/bowser.png" />
-          </Link>
-        </div>
+      <div className="w-full overflow-x-auto overflow-y-auto" style={{ maxHeight: "600px" }}>
+        <SingleEliminationBracket
+          matches={matches}
+          matchComponent={TournamentMatch}
+          theme={ssbTheme}
+          options={{
+            style: {
+              roundHeader: {
+                isShown: true,
+                backgroundColor: "#111827",
+                fontColor: "#ffffff",
+                fontSize: 12,
+              },
+              connectorColor: "#6b7280",
+              connectorColorHighlight: "#fbbf24",
+              width: 180,
+              boxHeight: 80,
+              spaceBetweenColumns: 50,
+              spaceBetweenRows: 20,
+            },
+          }}
+        />
       </div>
-
-      {/* Finals */}
-      <div className="w-full flex justify-center gap-2 sm:gap-6">
-        <div className="border-2 border-blue-500 bg-gray-700 p-4 rounded-xl flex items-center gap-2 sm:gap-4">
-          <Link href="/user/Gebu">
-          <BattleBox name="Gebu" sprite="/sprites/bowser.png"  />
-          </Link>
-          <Link href="/user/ACJATB">
-          <BattleBox name="AC Just A Thang Baby" sprite="/sprites/zelda.png"/>
-          </Link>
-        </div>
-      </div>
-
-      {/* Semifinals */}
-      <div className="w-full flex justify-center gap-2 sm:gap-6">
-        <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
-          <Link href="/user/Gebu">
-          <BattleBox name="Gebu" sprite="/sprites/bowser.png"/>
-          </Link>
-          <Link href="/user/ty">
-          <BattleBox name="Ty" sprite="/sprites/pokemon_trainer.png"/>
-          </Link>
-        </div>
-        <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4">
-          <Link href="/user/unk">
-          <BattleBox name="UNK" sprite="/sprites/donkey_kong.png"/>
-          </Link>
-          <Link href="/user/ACJATB">
-          <BattleBox name="AC Just A Thang Baby" sprite="/sprites/pikachu.png"/>
-          </Link>
-        </div>
-      </div>
-
-{/* Round of 6 */}
-<div className="w-full flex flex-col items-center gap-4 sm:gap-6">
-  {/* Top row: Lamp v Gebu & Unk v FTF side-by-side */}
-<div className="w-full flex justify-start gap-1 sm:gap-2 overflow-x-auto no-scrollbar px-2 sm:px-0">
-  <div className="border-2 border-blue-500 bg-gray-700 p-3 rounded-xl flex items-center gap-1 sm:gap-2 min-w-[140px]">
-    <Link href="/user/Gebu">
-      <BattleBox name="Gebu" sprite="/sprites/bowser.png" />
-    </Link>
-    <Link href="/user/Lamp">
-      <BattleBox name="Lamp" sprite="/sprites/sora.png" />
-    </Link>
-  </div>
-  <div className="border-2 border-blue-500 bg-gray-700  p-3 rounded-xl flex items-center gap-1 sm:gap-2 min-w-[140px]">
-    <Link href="/user/ftf">
-      <BattleBox name="FTF" sprite="/sprites/king_k_rool.png" />
-    </Link>
-    <Link href="/user/unk">
-      <BattleBox name="UNK" sprite="/sprites/donkey_kong.png" />
-    </Link>
-  </div>
-</div>
-
-
-  {/* BYE box below */}
-  <div className="w-full flex justify-center">
-    <div className="border-2 border-blue-500 bg-gray-700 p-2 rounded-xl flex items-center gap-2 sm:gap-4 min-w-[180px] max-w-[420px]">
-      *BYE*
-      <Link href="/user/ty">
-        <BattleBox name="TY" sprite="/sprites/pokemon_trainer.png" />
-      </Link>
-      <Link href="/user/acjatb">
-        <BattleBox name="AC Just A Thang Baby" sprite="/sprites/zelda.png" />
-      </Link>
-    </div>
-  </div>
-</div>
     </div>
   );
 }
