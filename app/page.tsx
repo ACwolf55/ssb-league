@@ -35,7 +35,7 @@ export default function Home() {
         <h1>SSB LEAGUE</h1>
       </header>
 
-      <main className="w-full max-w-4xl flex flex-col items-center gap-10">
+      <main className="w-full max-w-7xl flex flex-col items-center gap-10">
         <News />
 
       {/* <Link
