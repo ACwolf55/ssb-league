@@ -35,6 +35,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/ssbu.png" type="image/png" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
